@@ -19,7 +19,7 @@ class MenuLabel: UILabel {
     */
     
     override func drawTextInRect(rect: CGRect) {
-        let insets = UIEdgeInsets(top: 10, left: 0, bottom: 0, right: 0)
+        let insets = UIEdgeInsets(top: 16, left: 0, bottom: 0, right: 0)
         super.drawTextInRect(UIEdgeInsetsInsetRect(rect, insets))    }
 
 }

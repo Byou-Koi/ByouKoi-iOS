@@ -83,7 +83,7 @@ class ProfileCell: UITableViewCell {
     func layoutMenuBoxView(menuView: UILabel, index: CGFloat) {
         let margin: CGFloat = 20
         let width = (self.frame.width - margin*2 - 18) / 3
-        menuView.frame.size = CGSize(width: width, height: width - 50)
+        menuView.frame.size = CGSize(width: width, height: width*3/4)
         menuView.center = CGPoint(x: (margin + width/2) + (width + 9)*index, y: 220)
         menuView.roudConers([.TopLeft, .TopRight], radius: 10)
     }
@@ -91,8 +91,9 @@ class ProfileCell: UITableViewCell {
     func layoutManuLabel(menulabel: UILabel, index: CGFloat) {
         let margin: CGFloat = 20
         let width = (self.frame.width - margin*2 - 18) / 3
-        menulabel.frame.size = CGSize(width: width, height: 50)
-        menulabel.center = CGPoint(x: (margin + width/2) + (width + 9)*index, y: 220 + ((width - 50) / 2) + 10)
+        menulabel.frame.size = CGSize(width: width, height: width*2/4)
+        menulabel.font = UIFont(name: "HirakakuProN-W3", size: menulabel.frame.height/4)
+        menulabel.center = CGPoint(x: (margin + width/2) + (width + 9)*index, y: 220 + ((width*3/4) / 2) + 5)
     }
     
     //MARK-create subviews-
@@ -126,7 +127,6 @@ class ProfileCell: UITableViewCell {
     func createManuLabel(menulabel: UILabel, text: String) {
         menulabel.textColor = UIColor.mainTextColor()
         menulabel.makeCornerCircle()
-        menulabel.font = UIFont(name: "HirakakuProN-W3", size: 15)
         menulabel.textAlignment = .Center
         menulabel.text = text
         menulabel.layer.borderColor = UIColor(red: 255/255, green: 171/255, blue: 145/255, alpha: 1.0).CGColor
