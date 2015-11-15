@@ -8,8 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		14F4E948514DF44BBFFCC575 /* Pods_Byou_Koi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797AFFAE53341F6C2B2E8CF2 /* Pods_Byou_Koi.framework */; };
+		322128F71BF877E20048EEB9 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322128F61BF877E20048EEB9 /* ProfileTableViewController.swift */; };
+		322128F91BF8787E0048EEB9 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322128F81BF8787E0048EEB9 /* CustomNavigationBar.swift */; };
+		322128FC1BF879670048EEB9 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322128FB1BF879670048EEB9 /* UIColor+Extension.swift */; };
+		322129001BF87CE40048EEB9 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322128FE1BF87CE40048EEB9 /* ProfileCell.swift */; };
+		322129011BF87CE40048EEB9 /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 322128FF1BF87CE40048EEB9 /* ProfileCell.xib */; };
+		322129061BF87E4A0048EEB9 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322129051BF87E4A0048EEB9 /* UIFont+Extension.swift */; };
+		322129081BF880CC0048EEB9 /* paruru.png in Resources */ = {isa = PBXBuildFile; fileRef = 322129071BF880CC0048EEB9 /* paruru.png */; };
+		3221290B1BF881C30048EEB9 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3221290A1BF881C30048EEB9 /* UITableView+Extension.swift */; };
+		3221290D1BF883AF0048EEB9 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3221290C1BF883AF0048EEB9 /* UIView+Extension.swift */; };
+		3221290F1BF8846F0048EEB9 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 3221290E1BF8846F0048EEB9 /* camera.png */; };
+		32B39FA61BF8EC2A00CFAE89 /* MenuLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B39FA51BF8EC2A00CFAE89 /* MenuLabel.swift */; };
 		32ECD3BB1BF860CF00BB25BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ECD3BA1BF860CF00BB25BA /* AppDelegate.swift */; };
-		32ECD3BD1BF860CF00BB25BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ECD3BC1BF860CF00BB25BA /* ViewController.swift */; };
 		32ECD3C01BF860CF00BB25BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32ECD3BE1BF860CF00BB25BA /* Main.storyboard */; };
 		32ECD3C21BF860CF00BB25BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32ECD3C11BF860CF00BB25BA /* Assets.xcassets */; };
 		32ECD3C51BF860CF00BB25BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32ECD3C31BF860CF00BB25BA /* LaunchScreen.storyboard */; };
@@ -35,9 +45,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		322128F61BF877E20048EEB9 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		322128F81BF8787E0048EEB9 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		322128FB1BF879670048EEB9 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		322128FE1BF87CE40048EEB9 /* ProfileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		322128FF1BF87CE40048EEB9 /* ProfileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
+		322129051BF87E4A0048EEB9 /* UIFont+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		322129071BF880CC0048EEB9 /* paruru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paruru.png; sourceTree = "<group>"; };
+		3221290A1BF881C30048EEB9 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		3221290C1BF883AF0048EEB9 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		3221290E1BF8846F0048EEB9 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		32B39FA51BF8EC2A00CFAE89 /* MenuLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuLabel.swift; sourceTree = "<group>"; };
 		32ECD3B71BF860CF00BB25BA /* Byou-Koi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Byou-Koi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32ECD3BA1BF860CF00BB25BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		32ECD3BC1BF860CF00BB25BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		32ECD3BF1BF860CF00BB25BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		32ECD3C11BF860CF00BB25BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32ECD3C41BF860CF00BB25BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -79,6 +99,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		322128F51BF8772A0048EEB9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				322128F61BF877E20048EEB9 /* ProfileTableViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		322128FA1BF878830048EEB9 /* NavigationBars */ = {
+			isa = PBXGroup;
+			children = (
+				322128F81BF8787E0048EEB9 /* CustomNavigationBar.swift */,
+			);
+			name = NavigationBars;
+			sourceTree = "<group>";
+		};
+		322128FD1BF8796B0048EEB9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				322128FB1BF879670048EEB9 /* UIColor+Extension.swift */,
+				322129051BF87E4A0048EEB9 /* UIFont+Extension.swift */,
+				3221290A1BF881C30048EEB9 /* UITableView+Extension.swift */,
+				3221290C1BF883AF0048EEB9 /* UIView+Extension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		322129021BF87CE90048EEB9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				322128FE1BF87CE40048EEB9 /* ProfileCell.swift */,
+				322128FF1BF87CE40048EEB9 /* ProfileCell.xib */,
+				32B39FA51BF8EC2A00CFAE89 /* MenuLabel.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		322129091BF880CF0048EEB9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3221290E1BF8846F0048EEB9 /* camera.png */,
+				322129071BF880CC0048EEB9 /* paruru.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		32ECD3AE1BF860CE00BB25BA = {
 			isa = PBXGroup;
 			children = (
@@ -105,8 +171,12 @@
 			isa = PBXGroup;
 			children = (
 				32ECD3BA1BF860CF00BB25BA /* AppDelegate.swift */,
-				32ECD3BC1BF860CF00BB25BA /* ViewController.swift */,
 				32ECD3BE1BF860CF00BB25BA /* Main.storyboard */,
+				322129021BF87CE90048EEB9 /* Views */,
+				322128F51BF8772A0048EEB9 /* Controllers */,
+				322128FA1BF878830048EEB9 /* NavigationBars */,
+				322128FD1BF8796B0048EEB9 /* Extensions */,
+				322129091BF880CF0048EEB9 /* Images */,
 				32ECD3C11BF860CF00BB25BA /* Assets.xcassets */,
 				32ECD3C31BF860CF00BB25BA /* LaunchScreen.storyboard */,
 				32ECD3C61BF860CF00BB25BA /* Info.plist */,
@@ -256,8 +326,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				322129081BF880CC0048EEB9 /* paruru.png in Resources */,
 				32ECD3C51BF860CF00BB25BA /* LaunchScreen.storyboard in Resources */,
+				322129011BF87CE40048EEB9 /* ProfileCell.xib in Resources */,
 				32ECD3C21BF860CF00BB25BA /* Assets.xcassets in Resources */,
+				3221290F1BF8846F0048EEB9 /* camera.png in Resources */,
 				32ECD3C01BF860CF00BB25BA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,8 +404,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32ECD3BD1BF860CF00BB25BA /* ViewController.swift in Sources */,
+				322129061BF87E4A0048EEB9 /* UIFont+Extension.swift in Sources */,
+				322128F91BF8787E0048EEB9 /* CustomNavigationBar.swift in Sources */,
+				3221290D1BF883AF0048EEB9 /* UIView+Extension.swift in Sources */,
+				322128F71BF877E20048EEB9 /* ProfileTableViewController.swift in Sources */,
 				32ECD3BB1BF860CF00BB25BA /* AppDelegate.swift in Sources */,
+				32B39FA61BF8EC2A00CFAE89 /* MenuLabel.swift in Sources */,
+				322128FC1BF879670048EEB9 /* UIColor+Extension.swift in Sources */,
+				322129001BF87CE40048EEB9 /* ProfileCell.swift in Sources */,
+				3221290B1BF881C30048EEB9 /* UITableView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
