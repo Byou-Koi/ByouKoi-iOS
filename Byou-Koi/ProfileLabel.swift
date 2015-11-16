@@ -1,14 +1,14 @@
 //
-//  MenuLabel.swift
+//  ProfileLabel.swift
 //  Byou-Koi
 //
-//  Created by 松下慶大 on 2015/11/16.
+//  Created by 松下慶大 on 2015/11/17.
 //  Copyright © 2015年 matsushita keita. All rights reserved.
 //
 
 import UIKit
 
-class MenuLabel: UILabel {
+class ProfileLabel: UILabel {
 
     /*
     // Only override drawRect: if you perform custom drawing.
@@ -18,8 +18,14 @@ class MenuLabel: UILabel {
     }
     */
     
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.font = UIFont.mainJaFont()
+        self.font = UIFont.systemFontOfSize(15)
+    }
+    
     override func drawTextInRect(rect: CGRect) {
-        let insets = UIEdgeInsets(top: 16, left: 0, bottom: 0, right: 0)
+        let insets = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
         super.drawTextInRect(UIEdgeInsetsInsetRect(rect, insets))
     }
 

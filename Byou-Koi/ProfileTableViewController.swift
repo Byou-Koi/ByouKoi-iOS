@@ -10,10 +10,14 @@ import UIKit
 
 class ProfileTableViewController: UITableViewController {
 
+    let editMenus = ["名前", "自己紹介文", "年齢", "場所"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "マイページ"
         tableView.registerCellWithIdentifier("ProfileCell")
+        tableView.registerCellWithIdentifier("ProfileLabelCell")
+        tableView.registerCellWithIdentifier("EditMenuCell")
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,25 +29,44 @@ class ProfileTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 3
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 1
+        if section == 2 {
+            return 3
+        } else {
+            return 1
+        }
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("ProfileCell", forIndexPath: indexPath) as! ProfileCell
-        cell.menuBoxView1.text = "30"
-        cell.menuBoxView2.text = "10"
-        cell.menuBoxView3.text = "17"
-
-        return cell
+        if indexPath.section == 0 {
+            let cell = tableView.dequeueReusableCellWithIdentifier("ProfileCell", forIndexPath: indexPath) as! ProfileCell
+            cell.menuBoxView1.text = "30"
+            cell.menuBoxView2.text = "10"
+            cell.menuBoxView3.text = "17"
+            return cell
+        } else if indexPath.section == 1 {
+            let cell = tableView.dequeueReusableCellWithIdentifier("ProfileLabelCell", forIndexPath: indexPath) as! ProfileLabelCell
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCellWithIdentifier("EditMenuCell", forIndexPath: indexPath) as! EditMenuCell
+            cell.menuLabel.text = editMenus[indexPath.row]
+            return cell
+        }
     }
 
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 400
+        var height: CGFloat = 0
+        if indexPath.section == 0 {
+            height = 400
+        } else if indexPath.section == 1 {
+            height = 50
+        } else {
+            height = 40
+        }
+        return height
     }
     
     /*

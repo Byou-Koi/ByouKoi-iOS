@@ -9,7 +9,10 @@
 import UIKit
 
 class ProfileCell: UITableViewCell {
-    
+    @IBOutlet weak var yearsLabel: UILabel!
+    @IBOutlet weak var areaLabel: UILabel!
+    @IBOutlet weak var ageLabel: UILabel!
+    @IBOutlet weak var profileLabel: ProfileLabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var iconImageView: UIImageView!
     var iconBorderView: UIView!
@@ -44,6 +47,8 @@ class ProfileCell: UITableViewCell {
         superViewFrame = self.superview?.frame
         layoutIconBorder()
         layoutCameraImageView()
+        setProfileLabel()
+        setProfileLabels()
         layoutMenuBoxView(menuBoxView1, index: 0)
         layoutMenuBoxView(menuBoxView2, index: 1)
         layoutMenuBoxView(menuBoxView3, index: 2)
@@ -77,6 +82,7 @@ class ProfileCell: UITableViewCell {
     
     func layoutNameLabel() {
         nameLabel.font = UIFont.mainJaFont()
+        nameLabel.font = UIFont.systemFontOfSize(21)
         nameLabel.textColor = UIColor.mainTextColor()
     }
     
@@ -84,7 +90,7 @@ class ProfileCell: UITableViewCell {
         let margin: CGFloat = 20
         let width = (self.frame.width - margin*2 - 18) / 3
         menuView.frame.size = CGSize(width: width, height: width*3/4)
-        menuView.center = CGPoint(x: (margin + width/2) + (width + 9)*index, y: 220)
+        menuView.center = CGPoint(x: (margin + width/2) + (width + 9)*index, y: 300)
         menuView.roudConers([.TopLeft, .TopRight], radius: 10)
     }
     
@@ -93,14 +99,34 @@ class ProfileCell: UITableViewCell {
         let width = (self.frame.width - margin*2 - 18) / 3
         menulabel.frame.size = CGSize(width: width, height: width*2/4)
         menulabel.font = UIFont(name: "HirakakuProN-W3", size: menulabel.frame.height/4)
-        menulabel.center = CGPoint(x: (margin + width/2) + (width + 9)*index, y: 220 + ((width*3/4) / 2) + 5)
+        menulabel.center = CGPoint(x: (margin + width/2) + (width + 9)*index, y: 300 + ((width*3/4) / 2) + 5)
+    }
+    
+    func setProfileLabel() {
+        profileLabel.textColor = UIColor.mainTextColor()
+        profileLabel.numberOfLines = 2
+        profileLabel.makeCornerCircle()
+        profileLabel.layer.borderWidth = 1
+        profileLabel.layer.borderColor = UIColor(red: 255/255, green: 171/255, blue: 145/255, alpha: 1.0).CGColor
+    }
+    
+    func setProfileLabels() {
+        ageLabel.textColor = UIColor.subTextColor()
+        ageLabel.font = UIFont.mainJaFont()
+        ageLabel.font = UIFont.systemFontOfSize(17)
+        yearsLabel.textColor = UIColor.subTextColor()
+        yearsLabel.font = UIFont.mainJaFont()
+        yearsLabel.font = UIFont.systemFontOfSize(16)
+        areaLabel.textColor = UIColor.subTextColor()
+        areaLabel.font = UIFont.mainJaFont()
+        areaLabel.font = UIFont.systemFontOfSize(16)
     }
     
     //MARK-create subviews-
     
     func createIconBorder() {
         iconBorderView = UIView()
-        iconBorderView.frame.size = CGSize(width: 105, height: 105)
+        iconBorderView.frame.size = CGSize(width: 135, height: 135)
         iconBorderView.layer.borderWidth = 1
         iconBorderView.layer.borderColor = UIColor.subTextColor().CGColor
         iconBorderView.makeCircle()
@@ -111,7 +137,7 @@ class ProfileCell: UITableViewCell {
         cameraImageView = UIImageView()
         cameraImageView.image = UIImage(named: "camera")
         cameraImageView.frame.size = CGSize(width: 30, height: 30)
-        addSubview(cameraImageView)
+//        addSubview(cameraImageView)
     }
     
     func createManuBoxView(menulabel: UILabel) {
@@ -133,4 +159,5 @@ class ProfileCell: UITableViewCell {
         menulabel.layer.borderWidth = 2
         addSubview(menulabel)
     }
+    
 }

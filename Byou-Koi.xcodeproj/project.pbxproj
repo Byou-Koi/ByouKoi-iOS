@@ -19,6 +19,11 @@
 		3221290D1BF883AF0048EEB9 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3221290C1BF883AF0048EEB9 /* UIView+Extension.swift */; };
 		3221290F1BF8846F0048EEB9 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 3221290E1BF8846F0048EEB9 /* camera.png */; };
 		32B39FA61BF8EC2A00CFAE89 /* MenuLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B39FA51BF8EC2A00CFAE89 /* MenuLabel.swift */; };
+		32B39FA81BFA2EF000CFAE89 /* ProfileLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B39FA71BFA2EF000CFAE89 /* ProfileLabel.swift */; };
+		32B39FAD1BFA35B700CFAE89 /* ProfileLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B39FAB1BFA35B700CFAE89 /* ProfileLabelCell.swift */; };
+		32B39FAE1BFA35B700CFAE89 /* ProfileLabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32B39FAC1BFA35B700CFAE89 /* ProfileLabelCell.xib */; };
+		32B39FB31BFA3B1400CFAE89 /* EditMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B39FB11BFA3B1400CFAE89 /* EditMenuCell.swift */; };
+		32B39FB41BFA3B1400CFAE89 /* EditMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32B39FB21BFA3B1400CFAE89 /* EditMenuCell.xib */; };
 		32ECD3BB1BF860CF00BB25BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ECD3BA1BF860CF00BB25BA /* AppDelegate.swift */; };
 		32ECD3C01BF860CF00BB25BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32ECD3BE1BF860CF00BB25BA /* Main.storyboard */; };
 		32ECD3C21BF860CF00BB25BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32ECD3C11BF860CF00BB25BA /* Assets.xcassets */; };
@@ -56,6 +61,11 @@
 		3221290C1BF883AF0048EEB9 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		3221290E1BF8846F0048EEB9 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
 		32B39FA51BF8EC2A00CFAE89 /* MenuLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuLabel.swift; sourceTree = "<group>"; };
+		32B39FA71BFA2EF000CFAE89 /* ProfileLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileLabel.swift; sourceTree = "<group>"; };
+		32B39FAB1BFA35B700CFAE89 /* ProfileLabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileLabelCell.swift; sourceTree = "<group>"; };
+		32B39FAC1BFA35B700CFAE89 /* ProfileLabelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileLabelCell.xib; sourceTree = "<group>"; };
+		32B39FB11BFA3B1400CFAE89 /* EditMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditMenuCell.swift; sourceTree = "<group>"; };
+		32B39FB21BFA3B1400CFAE89 /* EditMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditMenuCell.xib; sourceTree = "<group>"; };
 		32ECD3B71BF860CF00BB25BA /* Byou-Koi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Byou-Koi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32ECD3BA1BF860CF00BB25BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32ECD3BF1BF860CF00BB25BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -129,9 +139,10 @@
 		322129021BF87CE90048EEB9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				322128FE1BF87CE40048EEB9 /* ProfileCell.swift */,
-				322128FF1BF87CE40048EEB9 /* ProfileCell.xib */,
-				32B39FA51BF8EC2A00CFAE89 /* MenuLabel.swift */,
+				32B39FAF1BFA35BD00CFAE89 /* Edit Label Cell */,
+				32B39FAA1BFA358E00CFAE89 /* Profile Cell */,
+				32B39FA91BFA34A800CFAE89 /* Constom Labels */,
+				32B39FB51BFA3B1900CFAE89 /* Edit Menu Label */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -143,6 +154,42 @@
 				322129071BF880CC0048EEB9 /* paruru.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		32B39FA91BFA34A800CFAE89 /* Constom Labels */ = {
+			isa = PBXGroup;
+			children = (
+				32B39FA51BF8EC2A00CFAE89 /* MenuLabel.swift */,
+				32B39FA71BFA2EF000CFAE89 /* ProfileLabel.swift */,
+			);
+			name = "Constom Labels";
+			sourceTree = "<group>";
+		};
+		32B39FAA1BFA358E00CFAE89 /* Profile Cell */ = {
+			isa = PBXGroup;
+			children = (
+				322128FE1BF87CE40048EEB9 /* ProfileCell.swift */,
+				322128FF1BF87CE40048EEB9 /* ProfileCell.xib */,
+			);
+			name = "Profile Cell";
+			sourceTree = "<group>";
+		};
+		32B39FAF1BFA35BD00CFAE89 /* Edit Label Cell */ = {
+			isa = PBXGroup;
+			children = (
+				32B39FAB1BFA35B700CFAE89 /* ProfileLabelCell.swift */,
+				32B39FAC1BFA35B700CFAE89 /* ProfileLabelCell.xib */,
+			);
+			name = "Edit Label Cell";
+			sourceTree = "<group>";
+		};
+		32B39FB51BFA3B1900CFAE89 /* Edit Menu Label */ = {
+			isa = PBXGroup;
+			children = (
+				32B39FB11BFA3B1400CFAE89 /* EditMenuCell.swift */,
+				32B39FB21BFA3B1400CFAE89 /* EditMenuCell.xib */,
+			);
+			name = "Edit Menu Label";
 			sourceTree = "<group>";
 		};
 		32ECD3AE1BF860CE00BB25BA = {
@@ -327,8 +374,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				322129081BF880CC0048EEB9 /* paruru.png in Resources */,
+				32B39FAE1BFA35B700CFAE89 /* ProfileLabelCell.xib in Resources */,
 				32ECD3C51BF860CF00BB25BA /* LaunchScreen.storyboard in Resources */,
 				322129011BF87CE40048EEB9 /* ProfileCell.xib in Resources */,
+				32B39FB41BFA3B1400CFAE89 /* EditMenuCell.xib in Resources */,
 				32ECD3C21BF860CF00BB25BA /* Assets.xcassets in Resources */,
 				3221290F1BF8846F0048EEB9 /* camera.png in Resources */,
 				32ECD3C01BF860CF00BB25BA /* Main.storyboard in Resources */,
@@ -406,11 +455,14 @@
 			files = (
 				322129061BF87E4A0048EEB9 /* UIFont+Extension.swift in Sources */,
 				322128F91BF8787E0048EEB9 /* CustomNavigationBar.swift in Sources */,
+				32B39FA81BFA2EF000CFAE89 /* ProfileLabel.swift in Sources */,
 				3221290D1BF883AF0048EEB9 /* UIView+Extension.swift in Sources */,
+				32B39FB31BFA3B1400CFAE89 /* EditMenuCell.swift in Sources */,
 				322128F71BF877E20048EEB9 /* ProfileTableViewController.swift in Sources */,
 				32ECD3BB1BF860CF00BB25BA /* AppDelegate.swift in Sources */,
 				32B39FA61BF8EC2A00CFAE89 /* MenuLabel.swift in Sources */,
 				322128FC1BF879670048EEB9 /* UIColor+Extension.swift in Sources */,
+				32B39FAD1BFA35B700CFAE89 /* ProfileLabelCell.swift in Sources */,
 				322129001BF87CE40048EEB9 /* ProfileCell.swift in Sources */,
 				3221290B1BF881C30048EEB9 /* UITableView+Extension.swift in Sources */,
 			);
