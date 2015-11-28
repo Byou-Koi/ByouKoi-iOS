@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C5B3932FAD9AD8CD8B36D586DCF6CF7AD4BE9669",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B7F1AAE6E1F6FAAF2AED675CA7AC62CDB45A3F03" : 0,
+    "C5B3932FAD9AD8CD8B36D586DCF6CF7AD4BE9669" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3A877ED2-F7F4-405B-9034-F0271E64A611",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B7F1AAE6E1F6FAAF2AED675CA7AC62CDB45A3F03" : "..\/..\/Desktop\/SimpleChat",
+    "C5B3932FAD9AD8CD8B36D586DCF6CF7AD4BE9669" : "ByouKoi-iOS\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Byou-Koi",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Byou-Koi.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/LoganWright\/SimpleChat.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B7F1AAE6E1F6FAAF2AED675CA7AC62CDB45A3F03"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Byou-Koi\/ByouKoi-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C5B3932FAD9AD8CD8B36D586DCF6CF7AD4BE9669"
+    }
+  ]
+}

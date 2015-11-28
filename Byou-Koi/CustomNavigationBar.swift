@@ -13,6 +13,8 @@ class CustomNavigationBar: UINavigationBar {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         layoutTitle()
+        barTintColor = UIColor.mainColor()
+        tintColor = UIColor.whiteColor()
     }
     
     override func layoutSubviews() {
@@ -21,7 +23,7 @@ class CustomNavigationBar: UINavigationBar {
     
     func layoutTitle() {
         let attributes = [
-            NSForegroundColorAttributeName: UIColor.mainTextColor(),
+            NSForegroundColorAttributeName: UIColor.whiteColor(),
             NSFontAttributeName: UIFont(name: "HirakakuProN-W3", size: 18)!
         ]
         titleTextAttributes = attributes

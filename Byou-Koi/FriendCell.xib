@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="91" id="KGk-i7-Jjw" customClass="FriendCell" customModule="Byou_Koi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="91"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="90.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SIW-Pn-6Ie">
+                        <rect key="frame" x="8" y="3" width="374" height="86.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paruru.png" translatesAutoresizingMaskIntoConstraints="NO" id="vAm-tb-nOr">
+                                <rect key="frame" x="8" y="8" width="68" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="2dj-nT-ENq"/>
+                                    <constraint firstAttribute="width" constant="68" id="kur-wh-oLi"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="島崎 ぱるる" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYS-M5-Znj">
+                                <rect key="frame" x="89" y="8" width="222" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="8qk-O3-2BZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="昨日" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMj-y2-Zln">
+                                <rect key="frame" x="326" y="8" width="40" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="hlB-Xu-OkY"/>
+                                    <constraint firstAttribute="height" constant="21" id="uRs-f7-jXg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日は楽しかったわ。またいつでも相手してあげるわ。退屈しないわ。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTH-fy-2px">
+                                <rect key="frame" x="89" y="34" width="251" height="41.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41.5" id="Zwu-sF-zz3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fTH-fy-2px" secondAttribute="trailing" constant="34" id="6Hq-Sv-KzE"/>
+                            <constraint firstItem="vAm-tb-nOr" firstAttribute="top" secondItem="SIW-Pn-6Ie" secondAttribute="top" constant="8" id="6oA-fN-45h"/>
+                            <constraint firstAttribute="trailing" secondItem="XMj-y2-Zln" secondAttribute="trailing" constant="8" id="F0y-Je-Q37"/>
+                            <constraint firstItem="gYS-M5-Znj" firstAttribute="top" secondItem="SIW-Pn-6Ie" secondAttribute="top" constant="8" id="HaP-P0-JDR"/>
+                            <constraint firstItem="fTH-fy-2px" firstAttribute="leading" secondItem="vAm-tb-nOr" secondAttribute="trailing" constant="13" id="OtG-Ch-OjV"/>
+                            <constraint firstItem="gYS-M5-Znj" firstAttribute="leading" secondItem="vAm-tb-nOr" secondAttribute="trailing" constant="13" id="TH2-Ja-Q4K"/>
+                            <constraint firstItem="XMj-y2-Zln" firstAttribute="top" secondItem="SIW-Pn-6Ie" secondAttribute="top" constant="8" id="TYb-w3-5x4"/>
+                            <constraint firstItem="XMj-y2-Zln" firstAttribute="leading" secondItem="gYS-M5-Znj" secondAttribute="trailing" constant="15" id="d8K-r9-A7W"/>
+                            <constraint firstItem="fTH-fy-2px" firstAttribute="top" secondItem="XMj-y2-Zln" secondAttribute="bottom" constant="5" id="h0O-Cg-S0O"/>
+                            <constraint firstItem="vAm-tb-nOr" firstAttribute="leading" secondItem="SIW-Pn-6Ie" secondAttribute="leading" constant="8" id="q0n-hR-3lT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="SIW-Pn-6Ie" secondAttribute="trailing" constant="8" id="T7R-4k-M9x"/>
+                    <constraint firstAttribute="bottom" secondItem="SIW-Pn-6Ie" secondAttribute="bottom" constant="1" id="Xof-e4-n2u"/>
+                    <constraint firstItem="SIW-Pn-6Ie" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="koZ-tt-FID"/>
+                    <constraint firstItem="SIW-Pn-6Ie" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="qgV-kT-BpJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImageView" destination="vAm-tb-nOr" id="ra2-dl-NdN"/>
+            </connections>
+            <point key="canvasLocation" x="516" y="216.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="paruru.png" width="640" height="564"/>
+    </resources>
+</document>

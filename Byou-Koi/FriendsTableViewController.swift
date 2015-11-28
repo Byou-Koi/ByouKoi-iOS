@@ -10,8 +10,11 @@ import UIKit
 
 class FriendsTableViewController: UITableViewController {
 
+    let images = ["honda", "paruru", "horikita"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.registerCellWithIdentifier("FriendCell")
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -33,17 +36,18 @@ class FriendsTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return 3
     }
 
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("FriendCell", forIndexPath: indexPath)
-
-        cell.textLabel?.text = "ぱるる"
-        cell.imageView?.image = UIImage(named: "paruru")
-
+        let cell = tableView.dequeueReusableCellWithIdentifier("FriendCell", forIndexPath: indexPath) as! FriendCell
+        cell.iconImageView.image = UIImage(named: self.images[indexPath.row])
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 91
     }
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

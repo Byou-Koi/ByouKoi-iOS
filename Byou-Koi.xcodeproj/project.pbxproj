@@ -18,15 +18,14 @@
 		3221290B1BF881C30048EEB9 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3221290A1BF881C30048EEB9 /* UITableView+Extension.swift */; };
 		3221290D1BF883AF0048EEB9 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3221290C1BF883AF0048EEB9 /* UIView+Extension.swift */; };
 		3221290F1BF8846F0048EEB9 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 3221290E1BF8846F0048EEB9 /* camera.png */; };
-		329DA1021BFB51BF00D339E1 /* TextBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 329DA1011BFB51BF00D339E1 /* TextBarView.xib */; };
-		329DA1041BFB527700D339E1 /* TextBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DA1031BFB527700D339E1 /* TextBarView.swift */; };
 		329DA1B41BFDD0E100D339E1 /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DA1B31BFDD0E100D339E1 /* FriendsTableViewController.swift */; };
-		329DA1B71BFDD22200D339E1 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DA1B61BFDD22200D339E1 /* ChatViewController.swift */; };
-		329DA1BA1BFF02F800D339E1 /* MyMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DA1B81BFF02F800D339E1 /* MyMessageCell.swift */; };
-		329DA1BB1BFF02F800D339E1 /* MyMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 329DA1B91BFF02F800D339E1 /* MyMessageCell.xib */; };
-		329DA1BE1BFF08D200D339E1 /* PartnerMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DA1BC1BFF08D200D339E1 /* PartnerMessageCell.swift */; };
-		329DA1BF1BFF08D200D339E1 /* PartnerMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 329DA1BD1BFF08D200D339E1 /* PartnerMessageCell.xib */; };
-		329DA1FB1C0311F200D339E1 /* MessageLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DA1FA1C0311F200D339E1 /* MessageLabel.swift */; };
+		329DA2111C05791800D339E1 /* LGSimpleChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DA20F1C05791800D339E1 /* LGSimpleChat.swift */; };
+		329DA2121C05791800D339E1 /* License in Resources */ = {isa = PBXBuildFile; fileRef = 329DA2101C05791800D339E1 /* License */; };
+		329DA2151C057A8A00D339E1 /* SimpleChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DA2141C057A8A00D339E1 /* SimpleChatViewController.swift */; };
+		329DA2181C0613CA00D339E1 /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DA2161C0613CA00D339E1 /* FriendCell.swift */; };
+		329DA2191C0613CA00D339E1 /* FriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 329DA2171C0613CA00D339E1 /* FriendCell.xib */; };
+		329DA21D1C0619EA00D339E1 /* horikita.png in Resources */ = {isa = PBXBuildFile; fileRef = 329DA21B1C0619EA00D339E1 /* horikita.png */; };
+		329DA21E1C0619EA00D339E1 /* honda.png in Resources */ = {isa = PBXBuildFile; fileRef = 329DA21C1C0619EA00D339E1 /* honda.png */; };
 		32B39FA61BF8EC2A00CFAE89 /* MenuLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B39FA51BF8EC2A00CFAE89 /* MenuLabel.swift */; };
 		32B39FA81BFA2EF000CFAE89 /* ProfileLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B39FA71BFA2EF000CFAE89 /* ProfileLabel.swift */; };
 		32B39FAD1BFA35B700CFAE89 /* ProfileLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B39FAB1BFA35B700CFAE89 /* ProfileLabelCell.swift */; };
@@ -69,15 +68,14 @@
 		3221290A1BF881C30048EEB9 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		3221290C1BF883AF0048EEB9 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		3221290E1BF8846F0048EEB9 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
-		329DA1011BFB51BF00D339E1 /* TextBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextBarView.xib; sourceTree = "<group>"; };
-		329DA1031BFB527700D339E1 /* TextBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextBarView.swift; sourceTree = "<group>"; };
 		329DA1B31BFDD0E100D339E1 /* FriendsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
-		329DA1B61BFDD22200D339E1 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
-		329DA1B81BFF02F800D339E1 /* MyMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMessageCell.swift; sourceTree = "<group>"; };
-		329DA1B91BFF02F800D339E1 /* MyMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyMessageCell.xib; sourceTree = "<group>"; };
-		329DA1BC1BFF08D200D339E1 /* PartnerMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartnerMessageCell.swift; sourceTree = "<group>"; };
-		329DA1BD1BFF08D200D339E1 /* PartnerMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PartnerMessageCell.xib; sourceTree = "<group>"; };
-		329DA1FA1C0311F200D339E1 /* MessageLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageLabel.swift; sourceTree = "<group>"; };
+		329DA20F1C05791800D339E1 /* LGSimpleChat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LGSimpleChat.swift; sourceTree = "<group>"; };
+		329DA2101C05791800D339E1 /* License */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License; sourceTree = "<group>"; };
+		329DA2141C057A8A00D339E1 /* SimpleChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleChatViewController.swift; sourceTree = "<group>"; };
+		329DA2161C0613CA00D339E1 /* FriendCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
+		329DA2171C0613CA00D339E1 /* FriendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendCell.xib; sourceTree = "<group>"; };
+		329DA21B1C0619EA00D339E1 /* horikita.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horikita.png; sourceTree = "<group>"; };
+		329DA21C1C0619EA00D339E1 /* honda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = honda.png; sourceTree = "<group>"; };
 		32B39FA51BF8EC2A00CFAE89 /* MenuLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuLabel.swift; sourceTree = "<group>"; };
 		32B39FA71BFA2EF000CFAE89 /* ProfileLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileLabel.swift; sourceTree = "<group>"; };
 		32B39FAB1BFA35B700CFAE89 /* ProfileLabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileLabelCell.swift; sourceTree = "<group>"; };
@@ -132,7 +130,7 @@
 			children = (
 				329DA1B51BFDD20500D339E1 /* New Group */,
 				322128F61BF877E20048EEB9 /* ProfileTableViewController.swift */,
-				329DA1B61BFDD22200D339E1 /* ChatViewController.swift */,
+				329DA2141C057A8A00D339E1 /* SimpleChatViewController.swift */,
 				329DA1B31BFDD0E100D339E1 /* FriendsTableViewController.swift */,
 			);
 			name = Controllers;
@@ -164,13 +162,7 @@
 				32B39FAA1BFA358E00CFAE89 /* Profile Cell */,
 				32B39FA91BFA34A800CFAE89 /* Constom Labels */,
 				32B39FB51BFA3B1900CFAE89 /* Edit Menu Label */,
-				329DA1011BFB51BF00D339E1 /* TextBarView.xib */,
-				329DA1031BFB527700D339E1 /* TextBarView.swift */,
-				329DA1B81BFF02F800D339E1 /* MyMessageCell.swift */,
-				329DA1B91BFF02F800D339E1 /* MyMessageCell.xib */,
-				329DA1BC1BFF08D200D339E1 /* PartnerMessageCell.swift */,
-				329DA1BD1BFF08D200D339E1 /* PartnerMessageCell.xib */,
-				329DA1FA1C0311F200D339E1 /* MessageLabel.swift */,
+				329DA21A1C0613CF00D339E1 /* Friend Cell */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -180,6 +172,8 @@
 			children = (
 				3221290E1BF8846F0048EEB9 /* camera.png */,
 				322129071BF880CC0048EEB9 /* paruru.png */,
+				329DA21B1C0619EA00D339E1 /* horikita.png */,
+				329DA21C1C0619EA00D339E1 /* honda.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -189,6 +183,24 @@
 			children = (
 			);
 			name = "New Group";
+			sourceTree = "<group>";
+		};
+		329DA2131C05792500D339E1 /* SimpleChat */ = {
+			isa = PBXGroup;
+			children = (
+				329DA20F1C05791800D339E1 /* LGSimpleChat.swift */,
+				329DA2101C05791800D339E1 /* License */,
+			);
+			name = SimpleChat;
+			sourceTree = "<group>";
+		};
+		329DA21A1C0613CF00D339E1 /* Friend Cell */ = {
+			isa = PBXGroup;
+			children = (
+				329DA2161C0613CA00D339E1 /* FriendCell.swift */,
+				329DA2171C0613CA00D339E1 /* FriendCell.xib */,
+			);
+			name = "Friend Cell";
 			sourceTree = "<group>";
 		};
 		32B39FA91BFA34A800CFAE89 /* Constom Labels */ = {
@@ -257,6 +269,7 @@
 				322129021BF87CE90048EEB9 /* Views */,
 				322128F51BF8772A0048EEB9 /* Controllers */,
 				322128FA1BF878830048EEB9 /* NavigationBars */,
+				329DA2131C05792500D339E1 /* SimpleChat */,
 				322128FD1BF8796B0048EEB9 /* Extensions */,
 				322129091BF880CF0048EEB9 /* Images */,
 				32ECD3C11BF860CF00BB25BA /* Assets.xcassets */,
@@ -411,14 +424,15 @@
 				322129081BF880CC0048EEB9 /* paruru.png in Resources */,
 				32B39FAE1BFA35B700CFAE89 /* ProfileLabelCell.xib in Resources */,
 				32ECD3C51BF860CF00BB25BA /* LaunchScreen.storyboard in Resources */,
-				329DA1BB1BFF02F800D339E1 /* MyMessageCell.xib in Resources */,
 				322129011BF87CE40048EEB9 /* ProfileCell.xib in Resources */,
-				329DA1BF1BFF08D200D339E1 /* PartnerMessageCell.xib in Resources */,
-				329DA1021BFB51BF00D339E1 /* TextBarView.xib in Resources */,
+				329DA2121C05791800D339E1 /* License in Resources */,
 				32B39FB41BFA3B1400CFAE89 /* EditMenuCell.xib in Resources */,
 				32ECD3C21BF860CF00BB25BA /* Assets.xcassets in Resources */,
 				3221290F1BF8846F0048EEB9 /* camera.png in Resources */,
+				329DA21D1C0619EA00D339E1 /* horikita.png in Resources */,
 				32ECD3C01BF860CF00BB25BA /* Main.storyboard in Resources */,
+				329DA21E1C0619EA00D339E1 /* honda.png in Resources */,
+				329DA2191C0613CA00D339E1 /* FriendCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,21 +506,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				322129061BF87E4A0048EEB9 /* UIFont+Extension.swift in Sources */,
-				329DA1041BFB527700D339E1 /* TextBarView.swift in Sources */,
-				329DA1B71BFDD22200D339E1 /* ChatViewController.swift in Sources */,
+				329DA2111C05791800D339E1 /* LGSimpleChat.swift in Sources */,
 				322128F91BF8787E0048EEB9 /* CustomNavigationBar.swift in Sources */,
 				32B39FA81BFA2EF000CFAE89 /* ProfileLabel.swift in Sources */,
+				329DA2151C057A8A00D339E1 /* SimpleChatViewController.swift in Sources */,
+				329DA2181C0613CA00D339E1 /* FriendCell.swift in Sources */,
 				3221290D1BF883AF0048EEB9 /* UIView+Extension.swift in Sources */,
 				32B39FB31BFA3B1400CFAE89 /* EditMenuCell.swift in Sources */,
 				322128F71BF877E20048EEB9 /* ProfileTableViewController.swift in Sources */,
 				32ECD3BB1BF860CF00BB25BA /* AppDelegate.swift in Sources */,
-				329DA1BA1BFF02F800D339E1 /* MyMessageCell.swift in Sources */,
-				329DA1FB1C0311F200D339E1 /* MessageLabel.swift in Sources */,
 				32B39FA61BF8EC2A00CFAE89 /* MenuLabel.swift in Sources */,
 				322128FC1BF879670048EEB9 /* UIColor+Extension.swift in Sources */,
 				32B39FAD1BFA35B700CFAE89 /* ProfileLabelCell.swift in Sources */,
 				322129001BF87CE40048EEB9 /* ProfileCell.swift in Sources */,
-				329DA1BE1BFF08D200D339E1 /* PartnerMessageCell.swift in Sources */,
 				3221290B1BF881C30048EEB9 /* UITableView+Extension.swift in Sources */,
 				329DA1B41BFDD0E100D339E1 /* FriendsTableViewController.swift in Sources */,
 			);
