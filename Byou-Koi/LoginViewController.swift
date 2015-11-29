@@ -10,11 +10,17 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    var loginView: LoginView!
+    var loginFormView: LoginFormView!
+    var signUpFormView: SignUpFormView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let loginView = LoginView.instance()
+        loginView = LoginView.instance()
         loginView.frame = self.view.frame
+        loginView.loginButton.addTarget(self, action: "tapLoginButton:", forControlEvents: .TouchUpInside)
+        loginView.signUpButton.addTarget(self, action: "tapSignUpButton:", forControlEvents: .TouchUpInside)
         self.view.addSubview(loginView)
     }
 
@@ -23,7 +29,31 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func tapLoginButton(sender: UIButton) {
+        loginFormView = LoginFormView.instance()
+        loginFormView.frame = self.view.frame
+        loginFormView.loginStartButton.addTarget(self, action: "startLogin:", forControlEvents: .TouchUpInside)
+        self.view.addSubview(loginFormView)
+    }
+    
 
+    func tapSignUpButton(sender: UIButton) {
+        signUpFormView = SignUpFormView.instance()
+        signUpFormView.frame = self.view.frame
+        signUpFormView.signUpButton.addTarget(self, action: "startSignUp:", forControlEvents: .TouchUpInside)
+        self.view.addSubview(signUpFormView)
+    }
+    
+    func startLogin(sender: UIButton) {
+        self.loginFormView.removeFromSuperview()
+//        dismissViewControllerAnimated(true, completion: nil)
+
+    }
+    
+    func startSignUp(sender: UIButton) {
+        self.signUpFormView.removeFromSuperview()
+    }
+    
     /*
     // MARK: - Navigation
 

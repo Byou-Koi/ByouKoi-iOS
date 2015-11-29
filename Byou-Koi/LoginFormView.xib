@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginFormView" customModule="Byou_Koi" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LoginFormView" customModule="Byou_Koi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ofe-PP-hBI">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="yCp-U5-TiT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RV2-oM-QhY">
+                                <rect key="frame" x="37" y="50" width="300" height="400"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="byousoku.png" translatesAutoresizingMaskIntoConstraints="NO" id="bxY-Pc-Iyt">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="FKQ-gS-KhX"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3s-PQ-Dyb">
+                                        <rect key="frame" x="12" y="346" width="276" height="46"/>
+                                        <color key="backgroundColor" red="0.99607843139999996" green="0.37254901959999998" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="q2g-VS-LZ8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                                        <state key="normal" title="ログイン">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B8q-Ni-3VQ">
+                                        <rect key="frame" x="12" y="249" width="276" height="1"/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="Z7a-0u-Z6G"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aXr-Db-khy">
+                                        <rect key="frame" x="12" y="300" width="276" height="1"/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="mRr-Ih-UUd"/>
+                                        </constraints>
+                                    </view>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ニックネーム" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tDt-et-1mF">
+                                        <rect key="frame" x="20" y="217" width="260" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="fJW-PB-vux"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="パスワード" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2uE-sg-TI5">
+                                        <rect key="frame" x="20" y="268" width="260" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="ebB-d7-yAa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- 秒 恋 -" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVf-bA-a4n">
+                                        <rect key="frame" x="82.5" y="153" width="135" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="135" id="8fI-W0-zWY"/>
+                                            <constraint firstAttribute="height" constant="39" id="KNX-e8-uVj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="28"/>
+                                        <color key="textColor" red="0.99607843139999996" green="0.37254901959999998" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="aVf-bA-a4n" firstAttribute="top" secondItem="bxY-Pc-Iyt" secondAttribute="bottom" constant="25" id="CLV-9t-rSD"/>
+                                    <constraint firstItem="B8q-Ni-3VQ" firstAttribute="top" secondItem="tDt-et-1mF" secondAttribute="bottom" constant="2" id="CWn-Bh-qHZ"/>
+                                    <constraint firstItem="aXr-Db-khy" firstAttribute="top" secondItem="2uE-sg-TI5" secondAttribute="bottom" constant="2" id="D5h-t6-uV4"/>
+                                    <constraint firstAttribute="trailing" secondItem="bxY-Pc-Iyt" secondAttribute="trailing" id="LuA-O6-dBo"/>
+                                    <constraint firstItem="tDt-et-1mF" firstAttribute="top" secondItem="aVf-bA-a4n" secondAttribute="bottom" constant="25" id="NbE-bZ-tmP"/>
+                                    <constraint firstItem="aXr-Db-khy" firstAttribute="leading" secondItem="RV2-oM-QhY" secondAttribute="leading" constant="12" id="Np0-gu-6Qf"/>
+                                    <constraint firstItem="V3s-PQ-Dyb" firstAttribute="leading" secondItem="RV2-oM-QhY" secondAttribute="leading" constant="12" id="PWO-nD-Ymm"/>
+                                    <constraint firstAttribute="trailing" secondItem="tDt-et-1mF" secondAttribute="trailing" constant="20" id="Rcv-2L-PgR"/>
+                                    <constraint firstAttribute="bottom" secondItem="V3s-PQ-Dyb" secondAttribute="bottom" constant="8" id="RmD-HI-PXa"/>
+                                    <constraint firstAttribute="trailing" secondItem="2uE-sg-TI5" secondAttribute="trailing" constant="20" id="Tyq-jb-YIZ"/>
+                                    <constraint firstItem="2uE-sg-TI5" firstAttribute="top" secondItem="B8q-Ni-3VQ" secondAttribute="bottom" constant="18" id="UNe-Qg-c45"/>
+                                    <constraint firstAttribute="height" constant="400" id="Udn-sh-3UE"/>
+                                    <constraint firstItem="tDt-et-1mF" firstAttribute="leading" secondItem="RV2-oM-QhY" secondAttribute="leading" constant="20" id="VBe-LJ-rgH"/>
+                                    <constraint firstItem="2uE-sg-TI5" firstAttribute="leading" secondItem="RV2-oM-QhY" secondAttribute="leading" constant="20" id="Z3r-7q-MLG"/>
+                                    <constraint firstAttribute="trailing" secondItem="B8q-Ni-3VQ" secondAttribute="trailing" constant="12" id="bnr-Wg-54F"/>
+                                    <constraint firstItem="bxY-Pc-Iyt" firstAttribute="leading" secondItem="RV2-oM-QhY" secondAttribute="leading" id="drZ-fq-1id"/>
+                                    <constraint firstItem="aVf-bA-a4n" firstAttribute="centerX" secondItem="RV2-oM-QhY" secondAttribute="centerX" id="efZ-sv-gXN"/>
+                                    <constraint firstAttribute="trailing" secondItem="aXr-Db-khy" secondAttribute="trailing" constant="12" id="i52-Lq-Dp6"/>
+                                    <constraint firstItem="B8q-Ni-3VQ" firstAttribute="leading" secondItem="RV2-oM-QhY" secondAttribute="leading" constant="12" id="jie-Ss-syy"/>
+                                    <constraint firstAttribute="trailing" secondItem="V3s-PQ-Dyb" secondAttribute="trailing" constant="12" id="sD5-5r-bwG"/>
+                                    <constraint firstItem="bxY-Pc-Iyt" firstAttribute="top" secondItem="RV2-oM-QhY" secondAttribute="top" id="vCw-Vi-fLo"/>
+                                    <constraint firstAttribute="width" constant="300" id="zcp-X3-gLQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="RV2-oM-QhY" firstAttribute="centerX" secondItem="yCp-U5-TiT" secondAttribute="centerX" id="MVT-tx-sGp"/>
+                            <constraint firstItem="RV2-oM-QhY" firstAttribute="top" secondItem="yCp-U5-TiT" secondAttribute="top" constant="50" id="nDj-H2-Ge5"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="ofe-PP-hBI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Zra-hp-JXa"/>
+                <constraint firstItem="ofe-PP-hBI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="f65-HB-pj5"/>
+                <constraint firstAttribute="bottom" secondItem="ofe-PP-hBI" secondAttribute="bottom" id="ltp-L8-FN7"/>
+                <constraint firstAttribute="trailing" secondItem="ofe-PP-hBI" secondAttribute="trailing" id="znz-2i-ePj"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <connections>
+                <outlet property="effectView" destination="ofe-PP-hBI" id="Re5-5l-V7g"/>
+                <outlet property="formViewMarginTop" destination="nDj-H2-Ge5" id="Aff-Ff-kDF"/>
+                <outlet property="formViewWidth" destination="zcp-X3-gLQ" id="VTe-R2-C5Y"/>
+                <outlet property="loginStartButton" destination="V3s-PQ-Dyb" id="lrL-98-sxt"/>
+                <outlet property="nameTextField" destination="tDt-et-1mF" id="oIm-3U-xNf"/>
+                <outlet property="passTextField" destination="2uE-sg-TI5" id="7NM-ic-qYh"/>
+            </connections>
+            <point key="canvasLocation" x="49.5" y="271.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="byousoku.png" width="704" height="396"/>
+    </resources>
+</document>

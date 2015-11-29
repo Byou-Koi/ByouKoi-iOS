@@ -24,9 +24,11 @@ class LoginView: UIView {
     
     func setUpButtons() {
         loginButton.lineWhiteBorder()
+//        loginButton.makeCornerCircle()
         signUpButton.lineWhiteBorder()
-        signUpButtonWidth.constant = (self.frame.width - 60) / 2
-        loginButtonWidth.constant = (self.frame.width - 60) / 2
+//        signUpButton.makeCornerCircle()
+//        signUpButtonWidth.constant = (self.frame.width - 60) / 2
+//        loginButtonWidth.constant = (self.frame.width - 60) / 2
     }
 
 

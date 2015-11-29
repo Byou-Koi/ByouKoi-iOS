@@ -38,38 +38,40 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PvD-Y3-kY2">
-                            <rect key="frame" x="20" y="561" width="120" height="54"/>
+                            <rect key="frame" x="12" y="544" width="171" height="54"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="54" id="1Ma-WB-aYe"/>
-                                <constraint firstAttribute="width" constant="120" id="66r-gJ-eAt"/>
+                                <constraint firstAttribute="height" constant="54" id="W34-v6-HiO"/>
+                                <constraint firstAttribute="width" constant="171" id="w0D-93-gtQ"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
-                            <state key="normal" title="初恋をする">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="16"/>
+                            <state key="normal" title="登録">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wx8-Fv-Ucm">
-                            <rect key="frame" x="235" y="561" width="120" height="54"/>
+                            <rect key="frame" x="192" y="544" width="171" height="54"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="54" id="4vm-Lt-8aj"/>
-                                <constraint firstAttribute="width" constant="120" id="lx6-iU-i1e"/>
+                                <constraint firstAttribute="width" constant="171" id="3lq-lZ-Okz"/>
+                                <constraint firstAttribute="height" constant="54" id="eOi-rO-aXI"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
-                            <state key="normal" title="あの恋をもう一度">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="16"/>
+                            <state key="normal" title="ログイン">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" red="0.14117647059999999" green="0.1843137255" blue="0.27058823529999998" alpha="0.27000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.14117647059999999" green="0.1843137255" blue="0.27058823529999998" alpha="0.38" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
+                        <constraint firstItem="PvD-Y3-kY2" firstAttribute="leading" secondItem="fW0-Pf-e6c" secondAttribute="leading" constant="12" id="0jw-ee-TpJ"/>
                         <constraint firstItem="9BI-Hv-fWt" firstAttribute="centerX" secondItem="fW0-Pf-e6c" secondAttribute="centerX" id="BIh-AQ-GvL"/>
-                        <constraint firstItem="PvD-Y3-kY2" firstAttribute="leading" secondItem="fW0-Pf-e6c" secondAttribute="leading" constant="20" id="LTg-pS-HZ4"/>
                         <constraint firstItem="na1-Tn-ZwJ" firstAttribute="centerX" secondItem="fW0-Pf-e6c" secondAttribute="centerX" id="Lgq-B4-9DD"/>
+                        <constraint firstAttribute="bottom" secondItem="Wx8-Fv-Ucm" secondAttribute="bottom" constant="69" id="Qf5-z6-CiY"/>
+                        <constraint firstAttribute="bottom" secondItem="PvD-Y3-kY2" secondAttribute="bottom" constant="69" id="Ujt-4n-xrT"/>
                         <constraint firstItem="na1-Tn-ZwJ" firstAttribute="top" secondItem="fW0-Pf-e6c" secondAttribute="top" constant="105" id="d47-7o-JAE"/>
-                        <constraint firstAttribute="bottom" secondItem="PvD-Y3-kY2" secondAttribute="bottom" constant="52" id="jXL-v4-bDz"/>
                         <constraint firstItem="9BI-Hv-fWt" firstAttribute="top" secondItem="na1-Tn-ZwJ" secondAttribute="bottom" constant="8" id="jeS-PO-gUj"/>
-                        <constraint firstAttribute="trailing" secondItem="Wx8-Fv-Ucm" secondAttribute="trailing" constant="20" id="paN-17-0dz"/>
-                        <constraint firstAttribute="bottom" secondItem="Wx8-Fv-Ucm" secondAttribute="bottom" constant="52" id="tCs-yd-f4E"/>
+                        <constraint firstAttribute="trailing" secondItem="Wx8-Fv-Ucm" secondAttribute="trailing" constant="12" id="orp-hg-hJz"/>
                     </constraints>
                 </view>
             </subviews>
@@ -86,9 +88,7 @@
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <connections>
                 <outlet property="loginButton" destination="Wx8-Fv-Ucm" id="e7n-aj-T5v"/>
-                <outlet property="loginButtonWidth" destination="lx6-iU-i1e" id="fFb-gJ-aZb"/>
                 <outlet property="signUpButton" destination="PvD-Y3-kY2" id="YmD-uh-LxX"/>
-                <outlet property="signUpButtonWidth" destination="66r-gJ-eAt" id="9IV-BP-vOM"/>
             </connections>
             <point key="canvasLocation" x="302.5" y="239.5"/>
         </view>

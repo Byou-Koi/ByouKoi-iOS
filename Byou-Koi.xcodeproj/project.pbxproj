@@ -31,6 +31,14 @@
 		329DA25E1C0993D700D339E1 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 329DA25D1C0993D700D339E1 /* LoginView.xib */; };
 		329DA2601C0995DB00D339E1 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DA25F1C0995DB00D339E1 /* MainTabBarController.swift */; };
 		329DA2621C099DBC00D339E1 /* love.png in Resources */ = {isa = PBXBuildFile; fileRef = 329DA2611C099DBC00D339E1 /* love.png */; };
+		329DA2651C0AC79900D339E1 /* LoginFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DA2641C0AC79900D339E1 /* LoginFormView.swift */; };
+		329DA2671C0AC7AC00D339E1 /* LoginFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 329DA2661C0AC7AC00D339E1 /* LoginFormView.xib */; };
+		329DA2691C0AD13300D339E1 /* byousoku.png in Resources */ = {isa = PBXBuildFile; fileRef = 329DA2681C0AD13300D339E1 /* byousoku.png */; };
+		329DA26B1C0AF4D700D339E1 /* backback.png in Resources */ = {isa = PBXBuildFile; fileRef = 329DA26A1C0AF4D700D339E1 /* backback.png */; };
+		329DA26D1C0AF6BC00D339E1 /* star_sky.png in Resources */ = {isa = PBXBuildFile; fileRef = 329DA26C1C0AF6BC00D339E1 /* star_sky.png */; };
+		329DA26F1C0AF72300D339E1 /* ffff.png in Resources */ = {isa = PBXBuildFile; fileRef = 329DA26E1C0AF72300D339E1 /* ffff.png */; };
+		329DA2711C0B076400D339E1 /* SignUpFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 329DA2701C0B076400D339E1 /* SignUpFormView.xib */; };
+		329DA2731C0B078B00D339E1 /* SignUpFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DA2721C0B078B00D339E1 /* SignUpFormView.swift */; };
 		32B39FA61BF8EC2A00CFAE89 /* MenuLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B39FA51BF8EC2A00CFAE89 /* MenuLabel.swift */; };
 		32B39FA81BFA2EF000CFAE89 /* ProfileLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B39FA71BFA2EF000CFAE89 /* ProfileLabel.swift */; };
 		32B39FAD1BFA35B700CFAE89 /* ProfileLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B39FAB1BFA35B700CFAE89 /* ProfileLabelCell.swift */; };
@@ -86,6 +94,14 @@
 		329DA25D1C0993D700D339E1 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		329DA25F1C0995DB00D339E1 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		329DA2611C099DBC00D339E1 /* love.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = love.png; sourceTree = "<group>"; };
+		329DA2641C0AC79900D339E1 /* LoginFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginFormView.swift; sourceTree = "<group>"; };
+		329DA2661C0AC7AC00D339E1 /* LoginFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginFormView.xib; sourceTree = "<group>"; };
+		329DA2681C0AD13300D339E1 /* byousoku.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = byousoku.png; sourceTree = "<group>"; };
+		329DA26A1C0AF4D700D339E1 /* backback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backback.png; sourceTree = "<group>"; };
+		329DA26C1C0AF6BC00D339E1 /* star_sky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_sky.png; sourceTree = "<group>"; };
+		329DA26E1C0AF72300D339E1 /* ffff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ffff.png; sourceTree = "<group>"; };
+		329DA2701C0B076400D339E1 /* SignUpFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpFormView.xib; sourceTree = "<group>"; };
+		329DA2721C0B078B00D339E1 /* SignUpFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpFormView.swift; sourceTree = "<group>"; };
 		32B39FA51BF8EC2A00CFAE89 /* MenuLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuLabel.swift; sourceTree = "<group>"; };
 		32B39FA71BFA2EF000CFAE89 /* ProfileLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileLabel.swift; sourceTree = "<group>"; };
 		32B39FAB1BFA35B700CFAE89 /* ProfileLabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileLabelCell.swift; sourceTree = "<group>"; };
@@ -174,8 +190,7 @@
 				32B39FA91BFA34A800CFAE89 /* Constom Labels */,
 				32B39FB51BFA3B1900CFAE89 /* Edit Menu Label */,
 				329DA21A1C0613CF00D339E1 /* Friend Cell */,
-				329DA25B1C0993C500D339E1 /* LoginView.swift */,
-				329DA25D1C0993D700D339E1 /* LoginView.xib */,
+				329DA2631C0AC77D00D339E1 /* Login View */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -184,6 +199,10 @@
 			isa = PBXGroup;
 			children = (
 				3221290E1BF8846F0048EEB9 /* camera.png */,
+				329DA26E1C0AF72300D339E1 /* ffff.png */,
+				329DA26C1C0AF6BC00D339E1 /* star_sky.png */,
+				329DA2681C0AD13300D339E1 /* byousoku.png */,
+				329DA26A1C0AF4D700D339E1 /* backback.png */,
 				329DA2611C099DBC00D339E1 /* love.png */,
 				322129071BF880CC0048EEB9 /* paruru.png */,
 				329DA21B1C0619EA00D339E1 /* horikita.png */,
@@ -208,6 +227,19 @@
 				329DA2171C0613CA00D339E1 /* FriendCell.xib */,
 			);
 			name = "Friend Cell";
+			sourceTree = "<group>";
+		};
+		329DA2631C0AC77D00D339E1 /* Login View */ = {
+			isa = PBXGroup;
+			children = (
+				329DA25B1C0993C500D339E1 /* LoginView.swift */,
+				329DA25D1C0993D700D339E1 /* LoginView.xib */,
+				329DA2641C0AC79900D339E1 /* LoginFormView.swift */,
+				329DA2661C0AC7AC00D339E1 /* LoginFormView.xib */,
+				329DA2721C0B078B00D339E1 /* SignUpFormView.swift */,
+				329DA2701C0B076400D339E1 /* SignUpFormView.xib */,
+			);
+			name = "Login View";
 			sourceTree = "<group>";
 		};
 		32B39FA91BFA34A800CFAE89 /* Constom Labels */ = {
@@ -428,14 +460,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				329DA2711C0B076400D339E1 /* SignUpFormView.xib in Resources */,
+				329DA2691C0AD13300D339E1 /* byousoku.png in Resources */,
 				322129081BF880CC0048EEB9 /* paruru.png in Resources */,
 				32B39FAE1BFA35B700CFAE89 /* ProfileLabelCell.xib in Resources */,
+				329DA26B1C0AF4D700D339E1 /* backback.png in Resources */,
 				32ECD3C51BF860CF00BB25BA /* LaunchScreen.storyboard in Resources */,
+				329DA26D1C0AF6BC00D339E1 /* star_sky.png in Resources */,
 				329DA25E1C0993D700D339E1 /* LoginView.xib in Resources */,
 				322129011BF87CE40048EEB9 /* ProfileCell.xib in Resources */,
 				329DA2621C099DBC00D339E1 /* love.png in Resources */,
+				329DA2671C0AC7AC00D339E1 /* LoginFormView.xib in Resources */,
 				329DA2121C05791800D339E1 /* License in Resources */,
 				32B39FB41BFA3B1400CFAE89 /* EditMenuCell.xib in Resources */,
+				329DA26F1C0AF72300D339E1 /* ffff.png in Resources */,
 				32ECD3C21BF860CF00BB25BA /* Assets.xcassets in Resources */,
 				3221290F1BF8846F0048EEB9 /* camera.png in Resources */,
 				329DA21D1C0619EA00D339E1 /* horikita.png in Resources */,
@@ -516,6 +554,8 @@
 			files = (
 				322129061BF87E4A0048EEB9 /* UIFont+Extension.swift in Sources */,
 				329DA2111C05791800D339E1 /* LGSimpleChat.swift in Sources */,
+				329DA2651C0AC79900D339E1 /* LoginFormView.swift in Sources */,
+				329DA2731C0B078B00D339E1 /* SignUpFormView.swift in Sources */,
 				322128F91BF8787E0048EEB9 /* CustomNavigationBar.swift in Sources */,
 				32B39FA81BFA2EF000CFAE89 /* ProfileLabel.swift in Sources */,
 				329DA2151C057A8A00D339E1 /* SimpleChatViewController.swift in Sources */,
