@@ -26,6 +26,11 @@
 		329DA2191C0613CA00D339E1 /* FriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 329DA2171C0613CA00D339E1 /* FriendCell.xib */; };
 		329DA21D1C0619EA00D339E1 /* horikita.png in Resources */ = {isa = PBXBuildFile; fileRef = 329DA21B1C0619EA00D339E1 /* horikita.png */; };
 		329DA21E1C0619EA00D339E1 /* honda.png in Resources */ = {isa = PBXBuildFile; fileRef = 329DA21C1C0619EA00D339E1 /* honda.png */; };
+		329DA25A1C09939500D339E1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DA2591C09939500D339E1 /* LoginViewController.swift */; };
+		329DA25C1C0993C500D339E1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DA25B1C0993C500D339E1 /* LoginView.swift */; };
+		329DA25E1C0993D700D339E1 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 329DA25D1C0993D700D339E1 /* LoginView.xib */; };
+		329DA2601C0995DB00D339E1 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DA25F1C0995DB00D339E1 /* MainTabBarController.swift */; };
+		329DA2621C099DBC00D339E1 /* love.png in Resources */ = {isa = PBXBuildFile; fileRef = 329DA2611C099DBC00D339E1 /* love.png */; };
 		32B39FA61BF8EC2A00CFAE89 /* MenuLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B39FA51BF8EC2A00CFAE89 /* MenuLabel.swift */; };
 		32B39FA81BFA2EF000CFAE89 /* ProfileLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B39FA71BFA2EF000CFAE89 /* ProfileLabel.swift */; };
 		32B39FAD1BFA35B700CFAE89 /* ProfileLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B39FAB1BFA35B700CFAE89 /* ProfileLabelCell.swift */; };
@@ -76,6 +81,11 @@
 		329DA2171C0613CA00D339E1 /* FriendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendCell.xib; sourceTree = "<group>"; };
 		329DA21B1C0619EA00D339E1 /* horikita.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horikita.png; sourceTree = "<group>"; };
 		329DA21C1C0619EA00D339E1 /* honda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = honda.png; sourceTree = "<group>"; };
+		329DA2591C09939500D339E1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		329DA25B1C0993C500D339E1 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		329DA25D1C0993D700D339E1 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		329DA25F1C0995DB00D339E1 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		329DA2611C099DBC00D339E1 /* love.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = love.png; sourceTree = "<group>"; };
 		32B39FA51BF8EC2A00CFAE89 /* MenuLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuLabel.swift; sourceTree = "<group>"; };
 		32B39FA71BFA2EF000CFAE89 /* ProfileLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileLabel.swift; sourceTree = "<group>"; };
 		32B39FAB1BFA35B700CFAE89 /* ProfileLabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileLabelCell.swift; sourceTree = "<group>"; };
@@ -128,10 +138,11 @@
 		322128F51BF8772A0048EEB9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				329DA1B51BFDD20500D339E1 /* New Group */,
+				329DA25F1C0995DB00D339E1 /* MainTabBarController.swift */,
 				322128F61BF877E20048EEB9 /* ProfileTableViewController.swift */,
 				329DA2141C057A8A00D339E1 /* SimpleChatViewController.swift */,
 				329DA1B31BFDD0E100D339E1 /* FriendsTableViewController.swift */,
+				329DA2591C09939500D339E1 /* LoginViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -163,6 +174,8 @@
 				32B39FA91BFA34A800CFAE89 /* Constom Labels */,
 				32B39FB51BFA3B1900CFAE89 /* Edit Menu Label */,
 				329DA21A1C0613CF00D339E1 /* Friend Cell */,
+				329DA25B1C0993C500D339E1 /* LoginView.swift */,
+				329DA25D1C0993D700D339E1 /* LoginView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -171,18 +184,12 @@
 			isa = PBXGroup;
 			children = (
 				3221290E1BF8846F0048EEB9 /* camera.png */,
+				329DA2611C099DBC00D339E1 /* love.png */,
 				322129071BF880CC0048EEB9 /* paruru.png */,
 				329DA21B1C0619EA00D339E1 /* horikita.png */,
 				329DA21C1C0619EA00D339E1 /* honda.png */,
 			);
 			name = Images;
-			sourceTree = "<group>";
-		};
-		329DA1B51BFDD20500D339E1 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "New Group";
 			sourceTree = "<group>";
 		};
 		329DA2131C05792500D339E1 /* SimpleChat */ = {
@@ -424,7 +431,9 @@
 				322129081BF880CC0048EEB9 /* paruru.png in Resources */,
 				32B39FAE1BFA35B700CFAE89 /* ProfileLabelCell.xib in Resources */,
 				32ECD3C51BF860CF00BB25BA /* LaunchScreen.storyboard in Resources */,
+				329DA25E1C0993D700D339E1 /* LoginView.xib in Resources */,
 				322129011BF87CE40048EEB9 /* ProfileCell.xib in Resources */,
+				329DA2621C099DBC00D339E1 /* love.png in Resources */,
 				329DA2121C05791800D339E1 /* License in Resources */,
 				32B39FB41BFA3B1400CFAE89 /* EditMenuCell.xib in Resources */,
 				32ECD3C21BF860CF00BB25BA /* Assets.xcassets in Resources */,
@@ -517,7 +526,10 @@
 				32ECD3BB1BF860CF00BB25BA /* AppDelegate.swift in Sources */,
 				32B39FA61BF8EC2A00CFAE89 /* MenuLabel.swift in Sources */,
 				322128FC1BF879670048EEB9 /* UIColor+Extension.swift in Sources */,
+				329DA25C1C0993C500D339E1 /* LoginView.swift in Sources */,
+				329DA2601C0995DB00D339E1 /* MainTabBarController.swift in Sources */,
 				32B39FAD1BFA35B700CFAE89 /* ProfileLabelCell.swift in Sources */,
+				329DA25A1C09939500D339E1 /* LoginViewController.swift in Sources */,
 				322129001BF87CE40048EEB9 /* ProfileCell.swift in Sources */,
 				3221290B1BF881C30048EEB9 /* UITableView+Extension.swift in Sources */,
 				329DA1B41BFDD0E100D339E1 /* FriendsTableViewController.swift in Sources */,

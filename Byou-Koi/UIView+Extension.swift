@@ -20,6 +20,11 @@ extension UIView {
         self.layer.masksToBounds = true
     }
     
+    func lineWhiteBorder() {
+        self.layer.borderWidth = 1
+        self.layer.borderColor = UIColor.whiteColor().CGColor
+    }
+    
     //[.TopLeft, .TopRight, .BottomLeft, .BottomRight]
     func roudConers(corners: UIRectCorner, radius: CGFloat) {
         let maskPath = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))

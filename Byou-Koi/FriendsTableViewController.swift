@@ -15,6 +15,7 @@ class FriendsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.registerCellWithIdentifier("FriendCell")
+
     }
     
     override func viewWillAppear(animated: Bool) {

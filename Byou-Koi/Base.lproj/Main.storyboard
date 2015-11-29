@@ -45,10 +45,10 @@
             </objects>
             <point key="canvasLocation" x="1602.5" y="-342.5"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar Controller-->
         <scene sceneID="Whx-I3-vMP">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="gn5-Rq-7z3" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="gn5-Rq-7z3" customClass="MainTabBarController" customModule="Byou_Koi" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Yfv-xX-cQE">
@@ -58,16 +58,17 @@
                     <connections>
                         <segue destination="4Pd-WT-5EB" kind="relationship" relationship="viewControllers" id="LvE-WG-POQ"/>
                         <segue destination="dgt-tx-KZZ" kind="relationship" relationship="viewControllers" id="Svz-2h-oKA"/>
+                        <segue destination="pbf-dK-qSR" kind="presentation" identifier="ModalLoginVC" id="nNK-xw-ywI"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mrI-Z2-jUT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1101.5" y="11.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="3sZ-Zy-Wwh">
             <objects>
-                <viewController id="pbf-dK-qSR" sceneMemberID="viewController">
+                <viewController id="pbf-dK-qSR" customClass="LoginViewController" customModule="Byou_Koi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1uY-01-2v6"/>
                         <viewControllerLayoutGuide type="bottom" id="6yH-gg-5ro"/>
@@ -81,7 +82,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VgM-cd-dc6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076.5" y="736.5"/>
+            <point key="canvasLocation" x="1101.5" y="827.5"/>
         </scene>
         <!--Item-->
         <scene sceneID="jto-xf-3Qm">

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginView" customModule="Byou_Koi" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LoginView" customModule="Byou_Koi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="love.png" translatesAutoresizingMaskIntoConstraints="NO" id="OaP-oC-jrC">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fW0-Pf-e6c">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="秒 恋" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="na1-Tn-ZwJ">
+                            <rect key="frame" x="93" y="105" width="188" height="51"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="51" id="7Sz-Vo-8an"/>
+                                <constraint firstAttribute="width" constant="188" id="FO1-kS-eAD"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="34"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Byo-Koi -" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9BI-Hv-fWt">
+                            <rect key="frame" x="145" y="164" width="85" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="F9w-Xn-gp7"/>
+                                <constraint firstAttribute="width" constant="85" id="ROe-X7-rUT"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PvD-Y3-kY2">
+                            <rect key="frame" x="20" y="561" width="120" height="54"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="54" id="1Ma-WB-aYe"/>
+                                <constraint firstAttribute="width" constant="120" id="66r-gJ-eAt"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                            <state key="normal" title="初恋をする">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wx8-Fv-Ucm">
+                            <rect key="frame" x="235" y="561" width="120" height="54"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="54" id="4vm-Lt-8aj"/>
+                                <constraint firstAttribute="width" constant="120" id="lx6-iU-i1e"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                            <state key="normal" title="あの恋をもう一度">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.14117647059999999" green="0.1843137255" blue="0.27058823529999998" alpha="0.27000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="9BI-Hv-fWt" firstAttribute="centerX" secondItem="fW0-Pf-e6c" secondAttribute="centerX" id="BIh-AQ-GvL"/>
+                        <constraint firstItem="PvD-Y3-kY2" firstAttribute="leading" secondItem="fW0-Pf-e6c" secondAttribute="leading" constant="20" id="LTg-pS-HZ4"/>
+                        <constraint firstItem="na1-Tn-ZwJ" firstAttribute="centerX" secondItem="fW0-Pf-e6c" secondAttribute="centerX" id="Lgq-B4-9DD"/>
+                        <constraint firstItem="na1-Tn-ZwJ" firstAttribute="top" secondItem="fW0-Pf-e6c" secondAttribute="top" constant="105" id="d47-7o-JAE"/>
+                        <constraint firstAttribute="bottom" secondItem="PvD-Y3-kY2" secondAttribute="bottom" constant="52" id="jXL-v4-bDz"/>
+                        <constraint firstItem="9BI-Hv-fWt" firstAttribute="top" secondItem="na1-Tn-ZwJ" secondAttribute="bottom" constant="8" id="jeS-PO-gUj"/>
+                        <constraint firstAttribute="trailing" secondItem="Wx8-Fv-Ucm" secondAttribute="trailing" constant="20" id="paN-17-0dz"/>
+                        <constraint firstAttribute="bottom" secondItem="Wx8-Fv-Ucm" secondAttribute="bottom" constant="52" id="tCs-yd-f4E"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="fW0-Pf-e6c" secondAttribute="bottom" id="3HE-nA-krS"/>
+                <constraint firstItem="OaP-oC-jrC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="8F3-pb-WsP"/>
+                <constraint firstItem="OaP-oC-jrC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Epb-ti-kSD"/>
+                <constraint firstItem="fW0-Pf-e6c" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cwT-bL-EXb"/>
+                <constraint firstAttribute="bottom" secondItem="OaP-oC-jrC" secondAttribute="bottom" id="k9k-Cb-STO"/>
+                <constraint firstItem="fW0-Pf-e6c" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="nx6-NA-i0r"/>
+                <constraint firstAttribute="trailing" secondItem="fW0-Pf-e6c" secondAttribute="trailing" id="oxn-AM-4Mp"/>
+                <constraint firstAttribute="trailing" secondItem="OaP-oC-jrC" secondAttribute="trailing" id="vUT-vN-A80"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <connections>
+                <outlet property="loginButton" destination="Wx8-Fv-Ucm" id="e7n-aj-T5v"/>
+                <outlet property="loginButtonWidth" destination="lx6-iU-i1e" id="fFb-gJ-aZb"/>
+                <outlet property="signUpButton" destination="PvD-Y3-kY2" id="YmD-uh-LxX"/>
+                <outlet property="signUpButtonWidth" destination="66r-gJ-eAt" id="9IV-BP-vOM"/>
+            </connections>
+            <point key="canvasLocation" x="302.5" y="239.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="love.png" width="1650" height="1100"/>
+    </resources>
+</document>
