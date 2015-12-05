@@ -9,11 +9,12 @@
 import UIKit
 
 class LoginFormView: UIView, UITextFieldDelegate {
+    @IBOutlet weak var mailTextField: UITextField!
     @IBOutlet weak var formViewWidth: NSLayoutConstraint!
     @IBOutlet weak var formViewMarginTop: NSLayoutConstraint!
 
     @IBOutlet weak var passTextField: UITextField!
-    @IBOutlet weak var nameTextField: UITextField!
+
     @IBOutlet weak var loginStartButton: UIButton!
     @IBOutlet weak var effectView: UIVisualEffectView!
 
@@ -28,7 +29,7 @@ class LoginFormView: UIView, UITextFieldDelegate {
         notificationCenter.addObserver(self, selector: "showKeyboard:", name: UIKeyboardWillShowNotification, object: nil)
         notificationCenter.addObserver(self, selector: "hideKeyboard:", name: UIKeyboardWillHideNotification, object: nil)
         
-        nameTextField.delegate = self
+        mailTextField.delegate = self
         passTextField.delegate = self
         
         formViewWidth.constant = self.frame.width - 40

@@ -16,7 +16,7 @@ class SimpleChatViewController: LGChatController, LGChatControllerDelegate {
         
         self.opponentImage = UIImage(named: "paruru")
         self.title = "Simple Chat"
-        let helloWorld = LGChatMessage(content: "hogehoge", sentBy: LGChatMessage.SentBy.Opponent)
+        let helloWorld = LGChatMessage(content: "おはよう！", sentBy: LGChatMessage.SentBy.Opponent)
         self.messages = [helloWorld]
         
     }

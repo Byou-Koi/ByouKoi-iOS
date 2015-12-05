@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class LoginViewController: UIViewController {
 
@@ -45,23 +46,46 @@ class LoginViewController: UIViewController {
     }
     
     func startLogin(sender: UIButton) {
+        
+        let mail = loginFormView.mailTextField.text
+        let pass = loginFormView.passTextField.text
+        
+        let attributes: JSON = ["email": mail!, "pass": pass!]
+        let user = User(attributes: attributes)
+        user.login { (message) -> Void in
+            if let msg = message {
+                self.showAlert(msg)
+                return
+            }
+        }
+        
         self.loginFormView.removeFromSuperview()
-//        dismissViewControllerAnimated(true, completion: nil)
+        dismissViewControllerAnimated(true, completion: nil)
 
     }
     
     func startSignUp(sender: UIButton) {
+        
+        let name = signUpFormView.nameTextField.text
+        let mail = signUpFormView.mailTextField.text
+        let pass = signUpFormView.passTextField.text
+        
+        let attributes: JSON = ["name": name!, "email": mail!, "pass": pass!]
+        let user = User(attributes: attributes)
+        user.signUp { (message) -> Void in
+            if let msg = message {
+                self.showAlert(msg)
+                return
+            }
+        }        
         self.signUpFormView.removeFromSuperview()
+        dismissViewControllerAnimated(true, completion: nil)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func showAlert(message: String) {
+        let alert = UIAlertController(title: "登録に失敗しました。", message: message, preferredStyle: .Alert)
+        let action = UIAlertAction(title: "OK", style: .Default, handler: nil)
+        alert.addAction(action)
+        self.presentViewController(alert, animated: true, completion: nil)
     }
-    */
-
 }

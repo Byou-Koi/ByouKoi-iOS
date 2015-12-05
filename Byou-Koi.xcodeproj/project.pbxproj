@@ -18,6 +18,7 @@
 		3221290B1BF881C30048EEB9 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3221290A1BF881C30048EEB9 /* UITableView+Extension.swift */; };
 		3221290D1BF883AF0048EEB9 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3221290C1BF883AF0048EEB9 /* UIView+Extension.swift */; };
 		3221290F1BF8846F0048EEB9 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 3221290E1BF8846F0048EEB9 /* camera.png */; };
+		3263BBCD1C0B35860035CDCF /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3263BBCC1C0B35860035CDCF /* CurrentUser.swift */; };
 		329DA1B41BFDD0E100D339E1 /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DA1B31BFDD0E100D339E1 /* FriendsTableViewController.swift */; };
 		329DA2111C05791800D339E1 /* LGSimpleChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DA20F1C05791800D339E1 /* LGSimpleChat.swift */; };
 		329DA2121C05791800D339E1 /* License in Resources */ = {isa = PBXBuildFile; fileRef = 329DA2101C05791800D339E1 /* License */; };
@@ -39,6 +40,8 @@
 		329DA26F1C0AF72300D339E1 /* ffff.png in Resources */ = {isa = PBXBuildFile; fileRef = 329DA26E1C0AF72300D339E1 /* ffff.png */; };
 		329DA2711C0B076400D339E1 /* SignUpFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 329DA2701C0B076400D339E1 /* SignUpFormView.xib */; };
 		329DA2731C0B078B00D339E1 /* SignUpFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DA2721C0B078B00D339E1 /* SignUpFormView.swift */; };
+		329DA2751C0B1FFF00D339E1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DA2741C0B1FFF00D339E1 /* User.swift */; };
+		329DA2781C0B224900D339E1 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DA2771C0B224900D339E1 /* String+Extension.swift */; };
 		32B39FA61BF8EC2A00CFAE89 /* MenuLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B39FA51BF8EC2A00CFAE89 /* MenuLabel.swift */; };
 		32B39FA81BFA2EF000CFAE89 /* ProfileLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B39FA71BFA2EF000CFAE89 /* ProfileLabel.swift */; };
 		32B39FAD1BFA35B700CFAE89 /* ProfileLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B39FAB1BFA35B700CFAE89 /* ProfileLabelCell.swift */; };
@@ -81,6 +84,7 @@
 		3221290A1BF881C30048EEB9 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		3221290C1BF883AF0048EEB9 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		3221290E1BF8846F0048EEB9 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		3263BBCC1C0B35860035CDCF /* CurrentUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
 		329DA1B31BFDD0E100D339E1 /* FriendsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
 		329DA20F1C05791800D339E1 /* LGSimpleChat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LGSimpleChat.swift; sourceTree = "<group>"; };
 		329DA2101C05791800D339E1 /* License */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 		329DA26E1C0AF72300D339E1 /* ffff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ffff.png; sourceTree = "<group>"; };
 		329DA2701C0B076400D339E1 /* SignUpFormView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpFormView.xib; sourceTree = "<group>"; };
 		329DA2721C0B078B00D339E1 /* SignUpFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpFormView.swift; sourceTree = "<group>"; };
+		329DA2741C0B1FFF00D339E1 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		329DA2771C0B224900D339E1 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		32B39FA51BF8EC2A00CFAE89 /* MenuLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuLabel.swift; sourceTree = "<group>"; };
 		32B39FA71BFA2EF000CFAE89 /* ProfileLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileLabel.swift; sourceTree = "<group>"; };
 		32B39FAB1BFA35B700CFAE89 /* ProfileLabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileLabelCell.swift; sourceTree = "<group>"; };
@@ -178,6 +184,7 @@
 				322129051BF87E4A0048EEB9 /* UIFont+Extension.swift */,
 				3221290A1BF881C30048EEB9 /* UITableView+Extension.swift */,
 				3221290C1BF883AF0048EEB9 /* UIView+Extension.swift */,
+				329DA2771C0B224900D339E1 /* String+Extension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -240,6 +247,15 @@
 				329DA2701C0B076400D339E1 /* SignUpFormView.xib */,
 			);
 			name = "Login View";
+			sourceTree = "<group>";
+		};
+		329DA2761C0B200500D339E1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				329DA2741C0B1FFF00D339E1 /* User.swift */,
+				3263BBCC1C0B35860035CDCF /* CurrentUser.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		32B39FA91BFA34A800CFAE89 /* Constom Labels */ = {
@@ -305,6 +321,7 @@
 			children = (
 				32ECD3BA1BF860CF00BB25BA /* AppDelegate.swift */,
 				32ECD3BE1BF860CF00BB25BA /* Main.storyboard */,
+				329DA2761C0B200500D339E1 /* Models */,
 				322129021BF87CE90048EEB9 /* Views */,
 				322128F51BF8772A0048EEB9 /* Controllers */,
 				322128FA1BF878830048EEB9 /* NavigationBars */,
@@ -562,7 +579,9 @@
 				329DA2181C0613CA00D339E1 /* FriendCell.swift in Sources */,
 				3221290D1BF883AF0048EEB9 /* UIView+Extension.swift in Sources */,
 				32B39FB31BFA3B1400CFAE89 /* EditMenuCell.swift in Sources */,
+				329DA2751C0B1FFF00D339E1 /* User.swift in Sources */,
 				322128F71BF877E20048EEB9 /* ProfileTableViewController.swift in Sources */,
+				329DA2781C0B224900D339E1 /* String+Extension.swift in Sources */,
 				32ECD3BB1BF860CF00BB25BA /* AppDelegate.swift in Sources */,
 				32B39FA61BF8EC2A00CFAE89 /* MenuLabel.swift in Sources */,
 				322128FC1BF879670048EEB9 /* UIColor+Extension.swift in Sources */,
@@ -572,6 +591,7 @@
 				329DA25A1C09939500D339E1 /* LoginViewController.swift in Sources */,
 				322129001BF87CE40048EEB9 /* ProfileCell.swift in Sources */,
 				3221290B1BF881C30048EEB9 /* UITableView+Extension.swift in Sources */,
+				3263BBCD1C0B35860035CDCF /* CurrentUser.swift in Sources */,
 				329DA1B41BFDD0E100D339E1 /* FriendsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

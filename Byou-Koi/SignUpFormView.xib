@@ -20,7 +20,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gwq-As-z68">
                                 <rect key="frame" x="20" y="50" width="335" height="442"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="byousoku.png" translatesAutoresizingMaskIntoConstraints="NO" id="d7x-UB-tEU">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backback.png" translatesAutoresizingMaskIntoConstraints="NO" id="d7x-UB-tEU">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="128"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="128" id="1uM-Xw-ubq"/>
@@ -154,6 +154,6 @@
         </view>
     </objects>
     <resources>
-        <image name="byousoku.png" width="704" height="396"/>
+        <image name="backback.png" width="1280" height="720"/>
     </resources>
 </document>

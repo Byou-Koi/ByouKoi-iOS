@@ -10,8 +10,6 @@ import UIKit
 
 class MainTabBarController: UITabBarController {
 
-    var flag = true
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -24,10 +22,10 @@ class MainTabBarController: UITabBarController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        if flag {
-            performSegueWithIdentifier("ModalLoginVC", sender: nil)
-            flag = false
-        }
+        let currentUser = CurrentUser.sharedInstance
+        if currentUser.isLogin() { return }
+        performSegueWithIdentifier("ModalLoginVC", sender: nil)
+
     }
     
 
