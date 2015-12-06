@@ -21,7 +21,7 @@ class User: NSObject {
     var name: String?
     var mail: String
     var pass: String?
-    var sex: Sex?
+    var sex: Bool?
     var authToken: String?
     
     init(attributes: JSON) {
@@ -29,7 +29,7 @@ class User: NSObject {
         self.mail = attributes["email"].string!
         self.pass = attributes["pass"].string
         self.id = attributes["id"].int
-        self.sex = Sex(rawValue: attributes["sex"].int!)
+        self.sex = attributes["sex"].bool
         self.authToken = attributes["auth_token"].string
     }
     
@@ -38,7 +38,7 @@ class User: NSObject {
         let params: [String: AnyObject] = [
             "name": self.name!,
             "email": self.mail,
-            "sex": (self.sex?.rawValue)!,
+            "sex": self.sex!,
             "password": self.pass!,
             "password_confirmation": self.pass!
         ]
@@ -56,10 +56,10 @@ class User: NSObject {
                     callback(message: messages.first?.string)
                     return
                 }
-                
                 let currentUser = CurrentUser.sharedInstance
                 currentUser.user = User(attributes: json["user"])
                 currentUser.saveAuthTokenToUserDefaults()
+                callback(message: nil)
         }
     }
     
@@ -87,6 +87,7 @@ class User: NSObject {
                 let currentUser = CurrentUser.sharedInstance
                 currentUser.user = User(attributes: json["user"])
                 currentUser.saveAuthTokenToUserDefaults()
+                callback(message: nil)
 
         }
     }

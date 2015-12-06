@@ -56,11 +56,10 @@ class LoginViewController: UIViewController {
             if let msg = message {
                 self.showAlert(msg)
                 return
+            } else {
+                self.dismissViewControllerAnimated(true, completion: nil)
             }
         }
-        self.loginFormView.removeFromSuperview()
-        dismissViewControllerAnimated(true, completion: nil)
-
     }
     
     func startSignUp(sender: UIButton) {
@@ -68,18 +67,19 @@ class LoginViewController: UIViewController {
         let name = signUpFormView.nameTextField.text
         let mail = signUpFormView.mailTextField.text
         let pass = signUpFormView.passTextField.text
-        let sex = signUpFormView.sexSegmentControl.selectedSegmentIndex
+        let sex = Bool(signUpFormView.sexSegmentControl.selectedSegmentIndex)
         
         let attributes: JSON = ["name": name!, "email": mail!, "pass": pass!, "sex": sex]
         let user = User(attributes: attributes)
         user.signUp { (message) -> Void in
+            print(message)
             if let msg = message {
                 self.showAlert(msg)
                 return
+            } else {
+                self.dismissViewControllerAnimated(true, completion: nil)
             }
-        }        
-        self.signUpFormView.removeFromSuperview()
-        dismissViewControllerAnimated(true, completion: nil)
+        }
     }
     
     func showAlert(message: String) {
