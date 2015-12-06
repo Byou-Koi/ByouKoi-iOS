@@ -128,6 +128,8 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="iconImageView" destination="7gh-IV-wxL" id="8Sz-4Z-czf"/>
+                <outlet property="mailLabel" destination="ejL-0g-nEh" id="IDb-vw-VuF"/>
+                <outlet property="nameLabel" destination="k9p-xf-VP3" id="zed-9g-lAd"/>
             </connections>
             <point key="canvasLocation" x="287.5" y="245.5"/>
         </tableViewCell>

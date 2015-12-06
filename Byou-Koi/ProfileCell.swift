@@ -9,6 +9,8 @@
 import UIKit
 
 class ProfileCell: UITableViewCell {
+    @IBOutlet weak var mailLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var iconImageView: UIImageView!
 
     override func awakeFromNib() {

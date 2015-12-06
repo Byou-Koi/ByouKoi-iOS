@@ -127,6 +127,7 @@
                 <outlet property="formViewWidth" destination="zcp-X3-gLQ" id="VTe-R2-C5Y"/>
                 <outlet property="loginStartButton" destination="V3s-PQ-Dyb" id="lrL-98-sxt"/>
                 <outlet property="mailTextField" destination="tDt-et-1mF" id="v8W-SF-ilj"/>
+                <outlet property="mainView" destination="RV2-oM-QhY" id="Uq5-W1-vea"/>
                 <outlet property="passTextField" destination="2uE-sg-TI5" id="7NM-ic-qYh"/>
             </connections>
             <point key="canvasLocation" x="49.5" y="271.5"/>

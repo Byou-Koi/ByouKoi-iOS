@@ -8,7 +8,8 @@
 
 import UIKit
 
-class LoginFormView: UIView, UITextFieldDelegate {
+class LoginFormView: UIView, UITextFieldDelegate, UIGestureRecognizerDelegate {
+    @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var mailTextField: UITextField!
     @IBOutlet weak var formViewWidth: NSLayoutConstraint!
     @IBOutlet weak var formViewMarginTop: NSLayoutConstraint!
@@ -37,9 +38,11 @@ class LoginFormView: UIView, UITextFieldDelegate {
         UIView.animateWithDuration(0.5) { () -> Void in
             self.effectView.alpha = 1.0
         }
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: "tapBackgroundView:")
+        tapGesture.delegate = self
+        self.addGestureRecognizer(tapGesture)
     }
-    
-
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
@@ -65,6 +68,18 @@ class LoginFormView: UIView, UITextFieldDelegate {
             self.formViewMarginTop.constant = 50
             self.layoutIfNeeded()
         }
+    }
+    
+    func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldReceiveTouch touch: UITouch) -> Bool {
+        if touch.view == self.mainView {
+            return false
+        } else {
+            return true
+        }
+    }
+    
+    func tapBackgroundView(gestureRecognizer: UITapGestureRecognizer) {
+        removeFromSuperview()
     }
 
     

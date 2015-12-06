@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 import SwiftyJSON
 
 class CurrentUser: NSObject {
@@ -16,7 +17,18 @@ class CurrentUser: NSObject {
     func saveAuthTokenToUserDefaults() {
         let defaults = NSUserDefaults.standardUserDefaults()
         defaults.setObject(self.user.authToken, forKey: "AuthToken")
+        defaults.setObject(self.user.id, forKey: "Id")
         defaults.synchronize()
+    }
+    
+    func fetchCurrentUser() {
+        let dafaults = NSUserDefaults.standardUserDefaults()
+        let currentUserId = dafaults.objectForKey("Id") as! Int
+        Alamofire.request(.GET, String.getRootApiUrl() + "/api/users/\(currentUserId)", parameters: nil)
+            .responseJSON { response in
+                let json = JSON(response.result.value!)
+                self.user = User(attributes: json["user"])
+        }
     }
     
     func isLogin() -> Bool {
@@ -29,6 +41,7 @@ class CurrentUser: NSObject {
     func logout() {
         let defaults = NSUserDefaults.standardUserDefaults()
         defaults.removeObjectForKey("AuthToken")
+        defaults.removeObjectForKey("Id")
         defaults.synchronize()
     }
 }

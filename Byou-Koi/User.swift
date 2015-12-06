@@ -11,6 +11,7 @@ import SwiftyJSON
 import Alamofire
 
 class User: NSObject {
+    
     var id: Int?
     var name: String?
     var mail: String

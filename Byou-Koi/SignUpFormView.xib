@@ -146,6 +146,7 @@
                 <outlet property="effectView" destination="z6k-gR-a0j" id="iws-42-vOL"/>
                 <outlet property="formViewMarginTop" destination="CvT-Z2-I3K" id="HYZ-7w-3Ex"/>
                 <outlet property="mailTextField" destination="AvL-Fm-PF2" id="BRn-ZU-B6e"/>
+                <outlet property="mainView" destination="Gwq-As-z68" id="231-TB-cbn"/>
                 <outlet property="nameTextField" destination="rsX-fD-CNO" id="kLK-eM-hX9"/>
                 <outlet property="passTextField" destination="CNo-2E-vZN" id="D0g-f5-kJx"/>
                 <outlet property="signUpButton" destination="5L9-y9-lbV" id="q7w-sc-Yrp"/>

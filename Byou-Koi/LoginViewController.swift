@@ -58,7 +58,6 @@ class LoginViewController: UIViewController {
                 return
             }
         }
-        
         self.loginFormView.removeFromSuperview()
         dismissViewControllerAnimated(true, completion: nil)
 

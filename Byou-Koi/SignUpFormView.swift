@@ -8,7 +8,8 @@
 
 import UIKit
 
-class SignUpFormView: UIView, UITextFieldDelegate {
+class SignUpFormView: UIView, UITextFieldDelegate, UIGestureRecognizerDelegate {
+    @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var formViewMarginTop: NSLayoutConstraint!
     @IBOutlet weak var passTextField: UITextField!
     @IBOutlet weak var mailTextField: UITextField!
@@ -35,6 +36,10 @@ class SignUpFormView: UIView, UITextFieldDelegate {
         UIView.animateWithDuration(0.5) { () -> Void in
             self.effectView.alpha = 1.0
         }
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: "tapBackgroundView:")
+        tapGesture.delegate = self
+        self.addGestureRecognizer(tapGesture)
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
@@ -61,6 +66,18 @@ class SignUpFormView: UIView, UITextFieldDelegate {
             self.formViewMarginTop.constant = 50
             self.layoutIfNeeded()
         }
+    }
+    
+    func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldReceiveTouch touch: UITouch) -> Bool {
+        if touch.view == self.mainView {
+            return false
+        } else {
+            return true
+        }
+    }
+    
+    func tapBackgroundView(gestureRecognizer: UITapGestureRecognizer) {
+        removeFromSuperview()
     }
 
 }
