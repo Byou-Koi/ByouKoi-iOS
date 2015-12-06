@@ -25,4 +25,10 @@ class CurrentUser: NSObject {
         let bool = (authToken != nil) ? true : false
         return bool
     }
+    
+    func logout() {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.removeObjectForKey("AuthToken")
+        defaults.synchronize()
+    }
 }

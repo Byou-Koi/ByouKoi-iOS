@@ -48,7 +48,7 @@
         <!--Main Tab Bar Controller-->
         <scene sceneID="Whx-I3-vMP">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="gn5-Rq-7z3" customClass="MainTabBarController" customModule="Byou_Koi" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabBarController" automaticallyAdjustsScrollViewInsets="NO" id="gn5-Rq-7z3" customClass="MainTabBarController" customModule="Byou_Koi" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Yfv-xX-cQE">

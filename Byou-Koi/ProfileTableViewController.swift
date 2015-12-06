@@ -11,6 +11,7 @@ import UIKit
 class ProfileTableViewController: UITableViewController {
 
     let editMenus = ["名前", "自己紹介文", "年齢", "場所"]
+    let currentUser = CurrentUser.sharedInstance
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +19,8 @@ class ProfileTableViewController: UITableViewController {
         tableView.registerCellWithIdentifier("ProfileCell")
         tableView.registerCellWithIdentifier("ProfileLabelCell")
         tableView.registerCellWithIdentifier("EditMenuCell")
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu.png"), style: .Plain, target: self, action: "showMenu")
     }
 
     override func didReceiveMemoryWarning() {
@@ -67,6 +70,22 @@ class ProfileTableViewController: UITableViewController {
             height = 40
         }
         return height
+    }
+    
+    
+    func showMenu() {
+        let actionSheet = UIAlertController(title: "メニュー", message: nil, preferredStyle: .ActionSheet)
+        actionSheet.addAction(
+            UIAlertAction(title: "ログアウト", style: .Default) { (action) in
+                self.currentUser.logout()
+                let tabBarController = self.storyboard?.instantiateViewControllerWithIdentifier("MainTabBarController") as! UITabBarController
+                UIApplication.sharedApplication().keyWindow?.rootViewController = tabBarController
+            }
+        )
+        actionSheet.addAction(
+            UIAlertAction(title: "キャンセル", style: .Cancel, handler: nil)
+        )
+        self.presentViewController(actionSheet, animated: true, completion: nil)
     }
     
     /*
