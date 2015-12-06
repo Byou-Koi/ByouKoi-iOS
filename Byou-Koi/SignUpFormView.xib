@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gwq-As-z68">
-                                <rect key="frame" x="20" y="50" width="335" height="442"/>
+                                <rect key="frame" x="20" y="50" width="335" height="470"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backback.png" translatesAutoresizingMaskIntoConstraints="NO" id="d7x-UB-tEU">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="128"/>
@@ -82,7 +82,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5L9-y9-lbV">
-                                        <rect key="frame" x="12" y="386" width="311" height="46"/>
+                                        <rect key="frame" x="12" y="414" width="311" height="46"/>
                                         <color key="backgroundColor" red="0.99607843139999996" green="0.37254901959999998" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="46" id="k1L-0T-SQp"/>
@@ -92,9 +92,22 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                     </button>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="m27-8l-uA8">
+                                        <rect key="frame" x="12" y="369" width="93" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="93" id="ei8-eu-rge"/>
+                                            <constraint firstAttribute="height" constant="28" id="hE6-Ip-GDv"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="男性"/>
+                                            <segment title="女性"/>
+                                        </segments>
+                                        <color key="tintColor" red="0.99607843139999996" green="0.37254901959999998" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                    </segmentedControl>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="m27-8l-uA8" firstAttribute="leading" secondItem="Gwq-As-z68" secondAttribute="leading" constant="12" id="1hh-Pl-Ti7"/>
                                     <constraint firstAttribute="bottom" secondItem="5L9-y9-lbV" secondAttribute="bottom" constant="10" id="1rb-di-abi"/>
                                     <constraint firstItem="CNo-2E-vZN" firstAttribute="top" secondItem="4Is-by-WEE" secondAttribute="bottom" constant="18" id="2Qd-7x-nXh"/>
                                     <constraint firstAttribute="trailing" secondItem="d7x-UB-tEU" secondAttribute="trailing" id="3ZU-qS-cW3"/>
@@ -102,12 +115,13 @@
                                     <constraint firstItem="T6R-5n-oAA" firstAttribute="leading" secondItem="Gwq-As-z68" secondAttribute="leading" constant="12" id="4DD-v4-6ND"/>
                                     <constraint firstItem="T6R-5n-oAA" firstAttribute="top" secondItem="CNo-2E-vZN" secondAttribute="bottom" constant="2" id="5JK-Xp-boa"/>
                                     <constraint firstItem="d7x-UB-tEU" firstAttribute="leading" secondItem="Gwq-As-z68" secondAttribute="leading" id="5o0-fc-nUS"/>
-                                    <constraint firstAttribute="height" constant="442" id="5yb-cF-E0M"/>
+                                    <constraint firstAttribute="height" constant="470" id="5yb-cF-E0M"/>
                                     <constraint firstItem="R0s-yM-XwX" firstAttribute="centerX" secondItem="Gwq-As-z68" secondAttribute="centerX" id="6rz-OW-uss"/>
                                     <constraint firstAttribute="trailing" secondItem="5L9-y9-lbV" secondAttribute="trailing" constant="12" id="Eyc-gX-tMh"/>
                                     <constraint firstAttribute="trailing" secondItem="CNo-2E-vZN" secondAttribute="trailing" constant="20" id="HkA-mI-Jhe"/>
                                     <constraint firstItem="unS-l7-uJx" firstAttribute="leading" secondItem="Gwq-As-z68" secondAttribute="leading" constant="12" id="If3-jK-amU"/>
                                     <constraint firstItem="d7x-UB-tEU" firstAttribute="top" secondItem="Gwq-As-z68" secondAttribute="top" id="Inf-3q-kQN"/>
+                                    <constraint firstItem="m27-8l-uA8" firstAttribute="top" secondItem="T6R-5n-oAA" secondAttribute="bottom" constant="17" id="Kmf-dG-Zag"/>
                                     <constraint firstItem="CNo-2E-vZN" firstAttribute="leading" secondItem="Gwq-As-z68" secondAttribute="leading" constant="20" id="KoM-mn-Ta0"/>
                                     <constraint firstItem="rsX-fD-CNO" firstAttribute="top" secondItem="R0s-yM-XwX" secondAttribute="bottom" constant="25" id="MeM-ZW-E4F"/>
                                     <constraint firstItem="unS-l7-uJx" firstAttribute="top" secondItem="rsX-fD-CNO" secondAttribute="bottom" constant="2" id="YyY-ir-nEf"/>
@@ -149,6 +163,7 @@
                 <outlet property="mainView" destination="Gwq-As-z68" id="231-TB-cbn"/>
                 <outlet property="nameTextField" destination="rsX-fD-CNO" id="kLK-eM-hX9"/>
                 <outlet property="passTextField" destination="CNo-2E-vZN" id="D0g-f5-kJx"/>
+                <outlet property="sexSegmentControl" destination="m27-8l-uA8" id="265-VY-Rvb"/>
                 <outlet property="signUpButton" destination="5L9-y9-lbV" id="q7w-sc-Yrp"/>
             </connections>
             <point key="canvasLocation" x="37.5" y="279.5"/>

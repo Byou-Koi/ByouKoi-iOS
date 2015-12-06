@@ -9,6 +9,7 @@
 import UIKit
 
 class SignUpFormView: UIView, UITextFieldDelegate, UIGestureRecognizerDelegate {
+    @IBOutlet weak var sexSegmentControl: UISegmentedControl!
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var formViewMarginTop: NSLayoutConstraint!
     @IBOutlet weak var passTextField: UITextField!
@@ -21,8 +22,6 @@ class SignUpFormView: UIView, UITextFieldDelegate, UIGestureRecognizerDelegate {
         return UINib(nibName: "SignUpFormView", bundle: nil).instantiateWithOwner(self, options: nil)[0] as! SignUpFormView
     }
     
-    
-    
     override func drawRect(rect: CGRect) {
         
         let notificationCenter = NSNotificationCenter.defaultCenter()
@@ -32,10 +31,7 @@ class SignUpFormView: UIView, UITextFieldDelegate, UIGestureRecognizerDelegate {
         nameTextField.delegate = self
         passTextField.delegate = self
         
-        effectView.alpha = 0.0
-        UIView.animateWithDuration(0.5) { () -> Void in
-            self.effectView.alpha = 1.0
-        }
+        animationMainView()
         
         let tapGesture = UITapGestureRecognizer(target: self, action: "tapBackgroundView:")
         tapGesture.delegate = self
@@ -57,7 +53,6 @@ class SignUpFormView: UIView, UITextFieldDelegate, UIGestureRecognizerDelegate {
                 self.formViewMarginTop.constant = -130
             }
             self.layoutIfNeeded()
-            
         }
     }
     
@@ -78,6 +73,15 @@ class SignUpFormView: UIView, UITextFieldDelegate, UIGestureRecognizerDelegate {
     
     func tapBackgroundView(gestureRecognizer: UITapGestureRecognizer) {
         removeFromSuperview()
+    }
+    
+    func animationMainView() {
+        effectView.alpha = 0.0
+        mainView.center.y += 30
+        UIView.animateWithDuration(0.5) { () -> Void in
+            self.mainView.center.y -= 30
+            self.effectView.alpha = 1.0
+        }
     }
 
 }

@@ -34,10 +34,7 @@ class LoginFormView: UIView, UITextFieldDelegate, UIGestureRecognizerDelegate {
         passTextField.delegate = self
         
         formViewWidth.constant = self.frame.width - 40
-        effectView.alpha = 0.0
-        UIView.animateWithDuration(0.5) { () -> Void in
-            self.effectView.alpha = 1.0
-        }
+        animationMainView()
         
         let tapGesture = UITapGestureRecognizer(target: self, action: "tapBackgroundView:")
         tapGesture.delegate = self
@@ -80,6 +77,15 @@ class LoginFormView: UIView, UITextFieldDelegate, UIGestureRecognizerDelegate {
     
     func tapBackgroundView(gestureRecognizer: UITapGestureRecognizer) {
         removeFromSuperview()
+    }
+    
+    func animationMainView() {
+        effectView.alpha = 0.0
+        mainView.center.y += 30
+        UIView.animateWithDuration(0.5) { () -> Void in
+            self.mainView.center.y -= 30
+            self.effectView.alpha = 1.0
+        }
     }
 
     

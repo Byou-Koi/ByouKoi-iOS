@@ -68,8 +68,9 @@ class LoginViewController: UIViewController {
         let name = signUpFormView.nameTextField.text
         let mail = signUpFormView.mailTextField.text
         let pass = signUpFormView.passTextField.text
+        let sex = signUpFormView.sexSegmentControl.selectedSegmentIndex
         
-        let attributes: JSON = ["name": name!, "email": mail!, "pass": pass!]
+        let attributes: JSON = ["name": name!, "email": mail!, "pass": pass!, "sex": sex]
         let user = User(attributes: attributes)
         user.signUp { (message) -> Void in
             if let msg = message {

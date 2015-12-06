@@ -10,12 +10,18 @@ import UIKit
 import SwiftyJSON
 import Alamofire
 
+enum Sex: Int {
+    case Man = 0
+    case Woman = 1
+}
+
 class User: NSObject {
     
     var id: Int?
     var name: String?
     var mail: String
     var pass: String?
+    var sex: Sex?
     var authToken: String?
     
     init(attributes: JSON) {
@@ -23,6 +29,7 @@ class User: NSObject {
         self.mail = attributes["email"].string!
         self.pass = attributes["pass"].string
         self.id = attributes["id"].int
+        self.sex = Sex(rawValue: attributes["sex"].int!)
         self.authToken = attributes["auth_token"].string
     }
     
@@ -31,6 +38,7 @@ class User: NSObject {
         let params: [String: AnyObject] = [
             "name": self.name!,
             "email": self.mail,
+            "sex": (self.sex?.rawValue)!,
             "password": self.pass!,
             "password_confirmation": self.pass!
         ]
