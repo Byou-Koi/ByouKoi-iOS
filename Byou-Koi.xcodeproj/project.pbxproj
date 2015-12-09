@@ -19,6 +19,9 @@
 		3221290D1BF883AF0048EEB9 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3221290C1BF883AF0048EEB9 /* UIView+Extension.swift */; };
 		3221290F1BF8846F0048EEB9 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 3221290E1BF8846F0048EEB9 /* camera.png */; };
 		3263BBCD1C0B35860035CDCF /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3263BBCC1C0B35860035CDCF /* CurrentUser.swift */; };
+		3266DD641C189059005AEE4D /* EditProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3266DD631C189059005AEE4D /* EditProfileTableViewController.swift */; };
+		3266DD681C1891E1005AEE4D /* EditIconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3266DD661C1891E1005AEE4D /* EditIconCell.swift */; };
+		3266DD691C1891E1005AEE4D /* EditIconCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3266DD671C1891E1005AEE4D /* EditIconCell.xib */; };
 		329DA1B41BFDD0E100D339E1 /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DA1B31BFDD0E100D339E1 /* FriendsTableViewController.swift */; };
 		329DA2111C05791800D339E1 /* LGSimpleChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DA20F1C05791800D339E1 /* LGSimpleChat.swift */; };
 		329DA2121C05791800D339E1 /* License in Resources */ = {isa = PBXBuildFile; fileRef = 329DA2101C05791800D339E1 /* License */; };
@@ -86,6 +89,9 @@
 		3221290C1BF883AF0048EEB9 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		3221290E1BF8846F0048EEB9 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
 		3263BBCC1C0B35860035CDCF /* CurrentUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
+		3266DD631C189059005AEE4D /* EditProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewController.swift; sourceTree = "<group>"; };
+		3266DD661C1891E1005AEE4D /* EditIconCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditIconCell.swift; sourceTree = "<group>"; };
+		3266DD671C1891E1005AEE4D /* EditIconCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditIconCell.xib; sourceTree = "<group>"; };
 		329DA1B31BFDD0E100D339E1 /* FriendsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
 		329DA20F1C05791800D339E1 /* LGSimpleChat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LGSimpleChat.swift; sourceTree = "<group>"; };
 		329DA2101C05791800D339E1 /* License */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License; sourceTree = "<group>"; };
@@ -167,6 +173,7 @@
 				329DA2141C057A8A00D339E1 /* SimpleChatViewController.swift */,
 				329DA1B31BFDD0E100D339E1 /* FriendsTableViewController.swift */,
 				329DA2591C09939500D339E1 /* LoginViewController.swift */,
+				3266DD631C189059005AEE4D /* EditProfileTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -194,6 +201,7 @@
 		322129021BF87CE90048EEB9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3266DD651C1891A4005AEE4D /* Edit Profile Form Cell */,
 				32B39FAF1BFA35BD00CFAE89 /* Edit Label Cell */,
 				32B39FAA1BFA358E00CFAE89 /* Profile Cell */,
 				32B39FA91BFA34A800CFAE89 /* Constom Labels */,
@@ -219,6 +227,15 @@
 				329DA21C1C0619EA00D339E1 /* honda.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		3266DD651C1891A4005AEE4D /* Edit Profile Form Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3266DD661C1891E1005AEE4D /* EditIconCell.swift */,
+				3266DD671C1891E1005AEE4D /* EditIconCell.xib */,
+			);
+			name = "Edit Profile Form Cell";
 			sourceTree = "<group>";
 		};
 		329DA2131C05792500D339E1 /* SimpleChat */ = {
@@ -486,6 +503,7 @@
 				322129081BF880CC0048EEB9 /* paruru.png in Resources */,
 				32B39FAE1BFA35B700CFAE89 /* ProfileLabelCell.xib in Resources */,
 				329DA26B1C0AF4D700D339E1 /* backback.png in Resources */,
+				3266DD691C1891E1005AEE4D /* EditIconCell.xib in Resources */,
 				32ECD3C51BF860CF00BB25BA /* LaunchScreen.storyboard in Resources */,
 				329DA26D1C0AF6BC00D339E1 /* star_sky.png in Resources */,
 				329DA25E1C0993D700D339E1 /* LoginView.xib in Resources */,
@@ -581,7 +599,9 @@
 				32B39FA81BFA2EF000CFAE89 /* ProfileLabel.swift in Sources */,
 				329DA2151C057A8A00D339E1 /* SimpleChatViewController.swift in Sources */,
 				329DA2181C0613CA00D339E1 /* FriendCell.swift in Sources */,
+				3266DD641C189059005AEE4D /* EditProfileTableViewController.swift in Sources */,
 				3221290D1BF883AF0048EEB9 /* UIView+Extension.swift in Sources */,
+				3266DD681C1891E1005AEE4D /* EditIconCell.swift in Sources */,
 				32B39FB31BFA3B1400CFAE89 /* EditMenuCell.swift in Sources */,
 				329DA2751C0B1FFF00D339E1 /* User.swift in Sources */,
 				322128F71BF877E20048EEB9 /* ProfileTableViewController.swift in Sources */,

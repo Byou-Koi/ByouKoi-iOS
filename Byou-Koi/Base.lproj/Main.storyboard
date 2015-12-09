@@ -20,10 +20,33 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="0mH-2J-gVp"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="qg3-eo-QXq" kind="presentation" identifier="modalEditProdileViewController" id="bj9-GA-tAn"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="woF-KD-tjH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2066.5" y="-342.5"/>
+        </scene>
+        <!--プロフィール変更-->
+        <scene sceneID="5dE-JG-STL">
+            <objects>
+                <tableViewController id="X19-SV-9fQ" customClass="EditProfileTableViewController" customModule="Byou_Koi" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Uwc-qa-B2h">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="X19-SV-9fQ" id="rrF-Ya-HUK"/>
+                            <outlet property="delegate" destination="X19-SV-9fQ" id="o61-fb-jfM"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="プロフィール変更" id="QSa-WN-ab1"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M4z-Fd-IEp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3031.5" y="-342.5"/>
         </scene>
         <!--Item-->
         <scene sceneID="JQh-sZ-aBT">
@@ -157,6 +180,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gB9-0g-Jbh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2520.5" y="413.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="s1m-Nz-QCD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qg3-eo-QXq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Jhg-It-rcS" customClass="CustomNavigationBar" customModule="Byou_Koi" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="X19-SV-9fQ" kind="relationship" relationship="rootViewController" id="De5-F7-rHX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z0f-Im-QDW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2555.5" y="-342.5"/>
         </scene>
     </scenes>
 </document>

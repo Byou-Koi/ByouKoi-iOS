@@ -22,6 +22,7 @@ class User: NSObject {
     var mail: String
     var pass: String?
     var sex: Bool?
+    var imageURL: String?
     var authToken: String?
     
     init(attributes: JSON) {
@@ -30,6 +31,7 @@ class User: NSObject {
         self.pass = attributes["pass"].string
         self.id = attributes["id"].int
         self.sex = attributes["sex"].bool
+        self.imageURL = attributes["image_url"].string
         self.authToken = attributes["auth_token"].string
     }
     

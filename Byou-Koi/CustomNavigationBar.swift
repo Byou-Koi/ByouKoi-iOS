@@ -13,6 +13,7 @@ class CustomNavigationBar: UINavigationBar {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         layoutTitle()
+        self.translucent = false
         barTintColor = UIColor.mainColor()
         tintColor = UIColor.whiteColor()
     }

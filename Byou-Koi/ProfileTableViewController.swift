@@ -51,6 +51,7 @@ class ProfileTableViewController: UITableViewController {
             return cell
         } else if indexPath.section == 1 {
             let cell = tableView.dequeueReusableCellWithIdentifier("ProfileLabelCell", forIndexPath: indexPath) as! ProfileLabelCell
+            cell.editProfileButton.addTarget(self, action: "modalEditProdileViewController", forControlEvents: .TouchUpInside)
             return cell
         } else {
             let cell = tableView.dequeueReusableCellWithIdentifier("EditMenuCell", forIndexPath: indexPath) as! EditMenuCell
@@ -87,6 +88,9 @@ class ProfileTableViewController: UITableViewController {
         self.presentViewController(actionSheet, animated: true, completion: nil)
     }
     
+    func modalEditProdileViewController() {
+        performSegueWithIdentifier("modalEditProdileViewController", sender: nil)
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
