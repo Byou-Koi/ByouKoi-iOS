@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class ProfileTableViewController: UITableViewController {
 
@@ -23,6 +24,11 @@ class ProfileTableViewController: UITableViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu.png"), style: .Plain, target: self, action: "showMenu")
     }
 
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tableView.reloadData()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -48,6 +54,7 @@ class ProfileTableViewController: UITableViewController {
             let cell = tableView.dequeueReusableCellWithIdentifier("ProfileCell", forIndexPath: indexPath) as! ProfileCell
             cell.nameLabel.text = self.currentUser.user.name
             cell.mailLabel.text = self.currentUser.user.mail
+            cell.iconImageView.asyncLoadImage(self.currentUser.user.imageURL!, placeHolder: "horikita.png")
             return cell
         } else if indexPath.section == 1 {
             let cell = tableView.dequeueReusableCellWithIdentifier("ProfileLabelCell", forIndexPath: indexPath) as! ProfileLabelCell

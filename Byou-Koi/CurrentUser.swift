@@ -44,4 +44,28 @@ class CurrentUser: NSObject {
         defaults.removeObjectForKey("Id")
         defaults.synchronize()
     }
+    
+    func uploadProfileImage(image: UIImage) {
+        
+        let params: [String: AnyObject] = [
+            "name": user.name!,
+            "auth_token": user.authToken!
+        ]
+        let pass = String.getRootApiUrl() +  "/api/users/\(user.id!)"
+        let httpMethod = Alamofire.Method.PUT.rawValue
+        
+        let urlRequest = NSData.urlRequestWithComponents(httpMethod, urlString: pass, parameters: params, image: image)
+        Alamofire.upload(urlRequest.0, data: urlRequest.1)
+            .responseJSON { response in
+                
+                if let error = response.result.error {
+                    print(error)
+                    return
+                }
+                
+                let json = JSON(response.result.value!)
+                self.user = User(attributes: json["user"])
+        }
+        
+    }
 }

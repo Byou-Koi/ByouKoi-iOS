@@ -31,7 +31,7 @@ class User: NSObject {
         self.pass = attributes["pass"].string
         self.id = attributes["id"].int
         self.sex = attributes["sex"].bool
-        self.imageURL = attributes["image_url"].string
+        self.imageURL = "\(String.getRootApiUrl())\(attributes["avatar"]["url"].string!)"
         self.authToken = attributes["auth_token"].string
     }
     

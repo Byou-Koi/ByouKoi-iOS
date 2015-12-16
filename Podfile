@@ -4,8 +4,9 @@
 use_frameworks!
 
 target 'Byou-Koi' do
-  pod 'Alamofire', '~> 3.0'
   pod 'SwiftyJSON'
+  pod 'Alamofire'
+  pod 'SDWebImage'
 end
 
 target 'Byou-KoiTests' do

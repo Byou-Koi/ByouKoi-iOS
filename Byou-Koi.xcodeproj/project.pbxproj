@@ -22,6 +22,8 @@
 		3266DD641C189059005AEE4D /* EditProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3266DD631C189059005AEE4D /* EditProfileTableViewController.swift */; };
 		3266DD681C1891E1005AEE4D /* EditIconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3266DD661C1891E1005AEE4D /* EditIconCell.swift */; };
 		3266DD691C1891E1005AEE4D /* EditIconCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3266DD671C1891E1005AEE4D /* EditIconCell.xib */; };
+		327E6AAB1C1DD7F100852E84 /* NSData+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327E6AAA1C1DD7F100852E84 /* NSData+Extension.swift */; };
+		327E6AAD1C21CB3900852E84 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327E6AAC1C21CB3900852E84 /* UIImageView+Extension.swift */; };
 		329DA1B41BFDD0E100D339E1 /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DA1B31BFDD0E100D339E1 /* FriendsTableViewController.swift */; };
 		329DA2111C05791800D339E1 /* LGSimpleChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DA20F1C05791800D339E1 /* LGSimpleChat.swift */; };
 		329DA2121C05791800D339E1 /* License in Resources */ = {isa = PBXBuildFile; fileRef = 329DA2101C05791800D339E1 /* License */; };
@@ -92,6 +94,8 @@
 		3266DD631C189059005AEE4D /* EditProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewController.swift; sourceTree = "<group>"; };
 		3266DD661C1891E1005AEE4D /* EditIconCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditIconCell.swift; sourceTree = "<group>"; };
 		3266DD671C1891E1005AEE4D /* EditIconCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditIconCell.xib; sourceTree = "<group>"; };
+		327E6AAA1C1DD7F100852E84 /* NSData+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+Extension.swift"; sourceTree = "<group>"; };
+		327E6AAC1C21CB3900852E84 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		329DA1B31BFDD0E100D339E1 /* FriendsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
 		329DA20F1C05791800D339E1 /* LGSimpleChat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LGSimpleChat.swift; sourceTree = "<group>"; };
 		329DA2101C05791800D339E1 /* License */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License; sourceTree = "<group>"; };
@@ -194,6 +198,8 @@
 				3221290A1BF881C30048EEB9 /* UITableView+Extension.swift */,
 				3221290C1BF883AF0048EEB9 /* UIView+Extension.swift */,
 				329DA2771C0B224900D339E1 /* String+Extension.swift */,
+				327E6AAA1C1DD7F100852E84 /* NSData+Extension.swift */,
+				327E6AAC1C21CB3900852E84 /* UIImageView+Extension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -597,6 +603,7 @@
 				329DA2731C0B078B00D339E1 /* SignUpFormView.swift in Sources */,
 				322128F91BF8787E0048EEB9 /* CustomNavigationBar.swift in Sources */,
 				32B39FA81BFA2EF000CFAE89 /* ProfileLabel.swift in Sources */,
+				327E6AAB1C1DD7F100852E84 /* NSData+Extension.swift in Sources */,
 				329DA2151C057A8A00D339E1 /* SimpleChatViewController.swift in Sources */,
 				329DA2181C0613CA00D339E1 /* FriendCell.swift in Sources */,
 				3266DD641C189059005AEE4D /* EditProfileTableViewController.swift in Sources */,
@@ -605,6 +612,7 @@
 				32B39FB31BFA3B1400CFAE89 /* EditMenuCell.swift in Sources */,
 				329DA2751C0B1FFF00D339E1 /* User.swift in Sources */,
 				322128F71BF877E20048EEB9 /* ProfileTableViewController.swift in Sources */,
+				327E6AAD1C21CB3900852E84 /* UIImageView+Extension.swift in Sources */,
 				329DA2781C0B224900D339E1 /* String+Extension.swift in Sources */,
 				32ECD3BB1BF860CF00BB25BA /* AppDelegate.swift in Sources */,
 				32B39FA61BF8EC2A00CFAE89 /* MenuLabel.swift in Sources */,
@@ -688,7 +696,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Keita Matsushita (NZ9Q6CGPKU)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -748,6 +756,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -757,6 +766,7 @@
 			baseConfigurationReference = 55B7C7DC53E8F2B75C6E15A7 /* Pods-Byou-Koi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Byou-Koi/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

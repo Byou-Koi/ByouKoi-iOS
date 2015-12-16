@@ -11,6 +11,7 @@ import UIKit
 class EditProfileTableViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     var iconImageView: UIImageView!
+    let currentUser = CurrentUser.sharedInstance
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +23,7 @@ class EditProfileTableViewController: UITableViewController, UIImagePickerContro
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "キャンセル", style: .Plain, target: self, action: "cancelEdit")
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "保存", style: .Plain, target: self, action: "saveProfile")
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "保存", style: .Plain, target: self, action: "saveProfile")
     }
 
     override func didReceiveMemoryWarning() {
@@ -63,7 +64,7 @@ class EditProfileTableViewController: UITableViewController, UIImagePickerContro
     }
     
     func saveProfile() {
-        
+        currentUser.uploadProfileImage(self.iconImageView.image!)
     }
     
     //カメラロール起動
