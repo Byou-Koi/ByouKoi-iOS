@@ -64,7 +64,9 @@ class EditProfileTableViewController: UITableViewController, UIImagePickerContro
     }
     
     func saveProfile() {
-        currentUser.uploadProfileImage(self.iconImageView.image!)
+        currentUser.uploadProfileImage(self.iconImageView.image!) { () in
+            self.dismissViewControllerAnimated(false, completion: nil)
+        }
     }
     
     //カメラロール起動

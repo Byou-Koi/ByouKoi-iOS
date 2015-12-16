@@ -54,7 +54,7 @@ class ProfileTableViewController: UITableViewController {
             let cell = tableView.dequeueReusableCellWithIdentifier("ProfileCell", forIndexPath: indexPath) as! ProfileCell
             cell.nameLabel.text = self.currentUser.user.name
             cell.mailLabel.text = self.currentUser.user.mail
-            cell.iconImageView.asyncLoadImage(self.currentUser.user.imageURL!, placeHolder: "horikita.png")
+            cell.iconImageView.asyncLoadImage(self.currentUser.user.imageURL!, placeHolder: "no_image.png")
             return cell
         } else if indexPath.section == 1 {
             let cell = tableView.dequeueReusableCellWithIdentifier("ProfileLabelCell", forIndexPath: indexPath) as! ProfileLabelCell

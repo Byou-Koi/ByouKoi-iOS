@@ -45,7 +45,7 @@ class CurrentUser: NSObject {
         defaults.synchronize()
     }
     
-    func uploadProfileImage(image: UIImage) {
+    func uploadProfileImage(image: UIImage, callback: () -> Void) {
         
         let params: [String: AnyObject] = [
             "name": user.name!,
@@ -65,6 +65,7 @@ class CurrentUser: NSObject {
                 
                 let json = JSON(response.result.value!)
                 self.user = User(attributes: json["user"])
+                callback()
         }
         
     }

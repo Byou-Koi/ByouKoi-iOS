@@ -24,6 +24,7 @@
 		3266DD691C1891E1005AEE4D /* EditIconCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3266DD671C1891E1005AEE4D /* EditIconCell.xib */; };
 		327E6AAB1C1DD7F100852E84 /* NSData+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327E6AAA1C1DD7F100852E84 /* NSData+Extension.swift */; };
 		327E6AAD1C21CB3900852E84 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327E6AAC1C21CB3900852E84 /* UIImageView+Extension.swift */; };
+		327E6AAF1C21CE6100852E84 /* no_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 327E6AAE1C21CE6100852E84 /* no_image.png */; };
 		329DA1B41BFDD0E100D339E1 /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DA1B31BFDD0E100D339E1 /* FriendsTableViewController.swift */; };
 		329DA2111C05791800D339E1 /* LGSimpleChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DA20F1C05791800D339E1 /* LGSimpleChat.swift */; };
 		329DA2121C05791800D339E1 /* License in Resources */ = {isa = PBXBuildFile; fileRef = 329DA2101C05791800D339E1 /* License */; };
@@ -96,6 +97,7 @@
 		3266DD671C1891E1005AEE4D /* EditIconCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditIconCell.xib; sourceTree = "<group>"; };
 		327E6AAA1C1DD7F100852E84 /* NSData+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+Extension.swift"; sourceTree = "<group>"; };
 		327E6AAC1C21CB3900852E84 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		327E6AAE1C21CE6100852E84 /* no_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = no_image.png; sourceTree = "<group>"; };
 		329DA1B31BFDD0E100D339E1 /* FriendsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
 		329DA20F1C05791800D339E1 /* LGSimpleChat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LGSimpleChat.swift; sourceTree = "<group>"; };
 		329DA2101C05791800D339E1 /* License */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				3221290E1BF8846F0048EEB9 /* camera.png */,
+				327E6AAE1C21CE6100852E84 /* no_image.png */,
 				32A9CA211C147D450063F333 /* menu@2x.png */,
 				329DA26E1C0AF72300D339E1 /* ffff.png */,
 				329DA26C1C0AF6BC00D339E1 /* star_sky.png */,
@@ -503,6 +506,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				327E6AAF1C21CE6100852E84 /* no_image.png in Resources */,
 				329DA2711C0B076400D339E1 /* SignUpFormView.xib in Resources */,
 				32A9CA221C147D450063F333 /* menu@2x.png in Resources */,
 				329DA2691C0AD13300D339E1 /* byousoku.png in Resources */,
