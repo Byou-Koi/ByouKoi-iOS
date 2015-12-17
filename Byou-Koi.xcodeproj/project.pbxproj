@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		14F4E948514DF44BBFFCC575 /* Pods_Byou_Koi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797AFFAE53341F6C2B2E8CF2 /* Pods_Byou_Koi.framework */; };
+		3209C8101C21D853004F2A23 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3209C80F1C21D853004F2A23 /* Chat.swift */; };
+		3209C8121C21D98F004F2A23 /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3209C8111C21D98F004F2A23 /* Secret.swift */; };
 		322128F71BF877E20048EEB9 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322128F61BF877E20048EEB9 /* ProfileTableViewController.swift */; };
 		322128F91BF8787E0048EEB9 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322128F81BF8787E0048EEB9 /* CustomNavigationBar.swift */; };
 		322128FC1BF879670048EEB9 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322128FB1BF879670048EEB9 /* UIColor+Extension.swift */; };
@@ -81,6 +83,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3209C80F1C21D853004F2A23 /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		3209C8111C21D98F004F2A23 /* Secret.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
 		322128F61BF877E20048EEB9 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		322128F81BF8787E0048EEB9 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		322128FB1BF879670048EEB9 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
@@ -171,6 +175,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3209C80D1C21D782004F2A23 /* Secret */ = {
+			isa = PBXGroup;
+			children = (
+				3209C8111C21D98F004F2A23 /* Secret.swift */,
+			);
+			name = Secret;
+			sourceTree = "<group>";
+		};
+		3209C80E1C21D840004F2A23 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				329DA2741C0B1FFF00D339E1 /* User.swift */,
+				3263BBCC1C0B35860035CDCF /* CurrentUser.swift */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
 		322128F51BF8772A0048EEB9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,8 +302,8 @@
 		329DA2761C0B200500D339E1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				329DA2741C0B1FFF00D339E1 /* User.swift */,
-				3263BBCC1C0B35860035CDCF /* CurrentUser.swift */,
+				3209C80E1C21D840004F2A23 /* User */,
+				3209C80F1C21D853004F2A23 /* Chat.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -357,6 +378,7 @@
 				329DA2131C05792500D339E1 /* SimpleChat */,
 				322128FD1BF8796B0048EEB9 /* Extensions */,
 				322129091BF880CF0048EEB9 /* Images */,
+				3209C80D1C21D782004F2A23 /* Secret */,
 				32ECD3C11BF860CF00BB25BA /* Assets.xcassets */,
 				32ECD3C31BF860CF00BB25BA /* LaunchScreen.storyboard */,
 				32ECD3C61BF860CF00BB25BA /* Info.plist */,
@@ -602,6 +624,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				322129061BF87E4A0048EEB9 /* UIFont+Extension.swift in Sources */,
+				3209C8121C21D98F004F2A23 /* Secret.swift in Sources */,
 				329DA2111C05791800D339E1 /* LGSimpleChat.swift in Sources */,
 				329DA2651C0AC79900D339E1 /* LoginFormView.swift in Sources */,
 				329DA2731C0B078B00D339E1 /* SignUpFormView.swift in Sources */,
@@ -615,6 +638,7 @@
 				3266DD681C1891E1005AEE4D /* EditIconCell.swift in Sources */,
 				32B39FB31BFA3B1400CFAE89 /* EditMenuCell.swift in Sources */,
 				329DA2751C0B1FFF00D339E1 /* User.swift in Sources */,
+				3209C8101C21D853004F2A23 /* Chat.swift in Sources */,
 				322128F71BF877E20048EEB9 /* ProfileTableViewController.swift in Sources */,
 				327E6AAD1C21CB3900852E84 /* UIImageView+Extension.swift in Sources */,
 				329DA2781C0B224900D339E1 /* String+Extension.swift in Sources */,

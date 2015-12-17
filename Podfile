@@ -6,7 +6,7 @@ use_frameworks!
 target 'Byou-Koi' do
   pod 'SwiftyJSON'
   pod 'Alamofire'
-  pod 'SDWebImage'
+  pod 'libPusher', '~> 1.6.1'
 end
 
 target 'Byou-KoiTests' do

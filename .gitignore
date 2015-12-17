@@ -32,3 +32,4 @@ profile
 # Carthage/Checkouts
 
 Carthage/Build
+Secret.swift

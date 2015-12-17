@@ -31,7 +31,9 @@ class User: NSObject {
         self.pass = attributes["pass"].string
         self.id = attributes["id"].int
         self.sex = attributes["sex"].bool
-        self.imageURL = "\(String.getRootApiUrl())\(attributes["avatar"]["url"].string!)"
+        if let url = attributes["avatar"]["url"].string {
+            self.imageURL = "\(String.getRootApiUrl())\(url)"
+        }
         self.authToken = attributes["auth_token"].string
     }
     
@@ -92,6 +94,11 @@ class User: NSObject {
                 callback(message: nil)
 
         }
+    }
+    
+    func isCurrentUser() -> Bool {
+        let currentUser = CurrentUser.sharedInstance.user
+        return currentUser.id == self.id
     }
     
 }

@@ -11,20 +11,22 @@ import UIKit
 
 extension UIImageView {
     
-    func asyncLoadImage(imageString: String, placeHolder: String) {
+    func asyncLoadImage(imageString: String?, placeHolder: String) {
         self.image = UIImage(named: placeHolder)
-        let url = NSURL(string: imageString)
-        let req = NSURLRequest(URL:url!)
-        let session = NSURLSession.sharedSession()
-        let task = session.dataTaskWithRequest(req, completionHandler: { (data, response, error) -> Void in
-            guard let _ = data else {
-                return
-            }
-            dispatch_async(dispatch_get_main_queue(), {
-                self.image = UIImage(data: NSData(data: data!))
+        if let imgString = imageString {
+            let url = NSURL(string: imgString)
+            let req = NSURLRequest(URL:url!)
+            let session = NSURLSession.sharedSession()
+            let task = session.dataTaskWithRequest(req, completionHandler: { (data, response, error) -> Void in
+                guard let _ = data else {
+                    return
+                }
+                dispatch_async(dispatch_get_main_queue(), {
+                    self.image = UIImage(data: NSData(data: data!))
+                })
             })
-        })
-        task.resume()
+            task.resume()
+        }
     }
     
 }

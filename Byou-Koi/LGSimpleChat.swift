@@ -249,7 +249,7 @@ class LGChatController : UIViewController, UITableViewDelegate, UITableViewDataS
     // MARK: Private Properties
     
     private let sizingCell = LGChatMessageCell()
-    private let tableView: UITableView = UITableView()
+    let tableView: UITableView = UITableView()
     private let chatInput = LGChatInput(frame: CGRectZero)
     private var bottomChatInputConstraint: NSLayoutConstraint!
     
