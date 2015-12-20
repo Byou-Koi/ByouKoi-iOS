@@ -28,6 +28,12 @@ class CurrentUser: NSObject {
             .responseJSON { response in
                 let json = JSON(response.result.value!)
                 self.user = User(attributes: json["user"])
+                
+                for lover in json["lovers"].array! {
+                    let loverUser = User(attributes: lover["lover"])
+                    loverUser.checked = lover["checked"].bool!
+                     self.user.lovers.append(loverUser)
+                }
         }
     }
     
@@ -68,5 +74,15 @@ class CurrentUser: NSObject {
                 callback()
         }
         
+    }
+    
+    func findUnCheckedLover() -> User? {
+        for lover in self.user.lovers {
+            if lover.checked == false {
+                lover.checked = true
+                return lover
+            }
+        }
+        return nil
     }
 }

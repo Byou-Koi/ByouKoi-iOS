@@ -155,11 +155,30 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <segue destination="L41-dH-Wev" kind="push" identifier="show" id="LeO-fX-KSw"/>
+                        <segue destination="bAq-Ue-ABc" kind="presentation" identifier="modelCongratulationsVC" modalTransitionStyle="crossDissolve" id="chX-I1-uE4"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RbZ-vK-3re" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2051.5" y="413.5"/>
+        </scene>
+        <!--Congratulations View Controller-->
+        <scene sceneID="Ki3-KI-W0s">
+            <objects>
+                <viewController id="bAq-Ue-ABc" customClass="CongratulationsViewController" customModule="Byou_Koi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0eJ-7F-A7I"/>
+                        <viewControllerLayoutGuide type="bottom" id="X7s-nN-xeD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P5n-Hu-gDC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hbI-Fl-dX6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2051.5" y="1185.5"/>
         </scene>
         <!--hoge-->
         <scene sceneID="pU3-3C-acy">

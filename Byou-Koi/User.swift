@@ -24,6 +24,8 @@ class User: NSObject {
     var sex: Bool?
     var imageURL: String?
     var authToken: String?
+    var lovers: [User] = []
+    var checked: Bool = false
     
     init(attributes: JSON) {
         self.name = attributes["name"].string
@@ -63,6 +65,10 @@ class User: NSObject {
                 let currentUser = CurrentUser.sharedInstance
                 currentUser.user = User(attributes: json["user"])
                 currentUser.saveAuthTokenToUserDefaults()
+                
+                let lover = User(attributes: json["lover"])
+                lover.checked = false
+                currentUser.user.lovers.append(lover)
                 callback(message: nil)
         }
     }
