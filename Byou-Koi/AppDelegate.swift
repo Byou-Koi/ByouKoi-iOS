@@ -20,7 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if currentUser.isLogin() {
             currentUser.fetchCurrentUser()
         }
-        
         return true
     }
 

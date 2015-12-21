@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FriendsTableViewController: UITableViewController {
+class FriendsTableViewController: UITableViewController, CurrentUserDelegate {
 
     let images = ["honda", "paruru", "horikita"]
     let currentUser = CurrentUser.sharedInstance
@@ -17,6 +17,7 @@ class FriendsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        currentUser.delegate = self
         tableView.registerCellWithIdentifier("FriendCell")
     }
     
@@ -27,11 +28,6 @@ class FriendsTableViewController: UITableViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        
-        if let lover = currentUser.findUnCheckedLover() {
-            self.currentLover = lover
-            performSegueWithIdentifier("modelCongratulationsVC", sender: nil)
-        }
 
         
     }
@@ -73,4 +69,17 @@ class FriendsTableViewController: UITableViewController {
             congratulationsViewController.lover = self.currentLover
         }
     }
+    
+    //delegate
+    
+    func didFinisedFetchUser(currentUser: CurrentUser) {
+        if currentUser.isLogin() {
+            if let lover = currentUser.findUnCheckedLover() {
+                self.currentLover = lover
+                performSegueWithIdentifier("modelCongratulationsVC", sender: nil)
+            }
+        }
+    }
+    
+    
 }

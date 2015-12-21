@@ -21,11 +21,9 @@ class MainTabBarController: UITabBarController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        
         let currentUser = CurrentUser.sharedInstance
         if currentUser.isLogin() { return }
         performSegueWithIdentifier("ModalLoginVC", sender: nil)
-
     }
     
 

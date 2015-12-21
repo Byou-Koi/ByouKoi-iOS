@@ -10,9 +10,14 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
+@objc protocol CurrentUserDelegate {
+    func didFinisedFetchUser(currentUser: CurrentUser)
+}
+
 class CurrentUser: NSObject {
     static let sharedInstance = CurrentUser()
     var user: User!
+    weak var delegate: CurrentUserDelegate?
     
     func saveAuthTokenToUserDefaults() {
         let defaults = NSUserDefaults.standardUserDefaults()
@@ -34,6 +39,8 @@ class CurrentUser: NSObject {
                     loverUser.checked = lover["checked"].bool!
                      self.user.lovers.append(loverUser)
                 }
+                
+                self.delegate?.didFinisedFetchUser(self)
         }
     }
     
@@ -57,7 +64,7 @@ class CurrentUser: NSObject {
             "name": user.name!,
             "auth_token": user.authToken!
         ]
-        let pass = String.getRootApiUrl() +  "/api/users/\(user.id!)"
+        let pass = String.getRootApiUrl() +  "/api/users/\(self.user.id!)"
         let httpMethod = Alamofire.Method.PUT.rawValue
         
         let urlRequest = NSData.urlRequestWithComponents(httpMethod, urlString: pass, parameters: params, image: image)
@@ -76,6 +83,17 @@ class CurrentUser: NSObject {
         
     }
     
+    func checkLover(lover: User) {
+        let params: [String: AnyObject] = [
+            "lover_id": lover.id!
+        ]
+        let pass = String.getRootApiUrl() +  "/api/users/\(self.user.id!)/check_lover"
+        Alamofire.request(.POST, pass, parameters: params)
+            .responseJSON { response in
+                
+        }
+    }
+    
     func findUnCheckedLover() -> User? {
         for lover in self.user.lovers {
             if lover.checked == false {
@@ -85,4 +103,8 @@ class CurrentUser: NSObject {
         }
         return nil
     }
+    
+    
+    
+    
 }

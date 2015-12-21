@@ -212,6 +212,7 @@
 		322128F51BF8772A0048EEB9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				322129021BF87CE90048EEB9 /* Views */,
 				329DA25F1C0995DB00D339E1 /* MainTabBarController.swift */,
 				322128F61BF877E20048EEB9 /* ProfileTableViewController.swift */,
 				329DA2141C057A8A00D339E1 /* SimpleChatViewController.swift */,
@@ -392,7 +393,6 @@
 				32ECD3BA1BF860CF00BB25BA /* AppDelegate.swift */,
 				32ECD3BE1BF860CF00BB25BA /* Main.storyboard */,
 				329DA2761C0B200500D339E1 /* Models */,
-				322129021BF87CE90048EEB9 /* Views */,
 				322128F51BF8772A0048EEB9 /* Controllers */,
 				322128FA1BF878830048EEB9 /* NavigationBars */,
 				329DA2131C05792500D339E1 /* SimpleChat */,

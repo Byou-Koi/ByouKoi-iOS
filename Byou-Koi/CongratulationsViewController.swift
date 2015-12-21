@@ -11,6 +11,7 @@ import UIKit
 class CongratulationsViewController: UIViewController {
 
     var lover: User!
+    let currentUser = CurrentUser.sharedInstance
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,8 +20,10 @@ class CongratulationsViewController: UIViewController {
         congratulationsView.frame = self.view.frame
         self.view.addSubview(congratulationsView)
         
-        congratulationsView.nameLabel.text = "本田つばさ"
+        congratulationsView.nameLabel.text = lover.name
         congratulationsView.backButton.addTarget(self, action: "back", forControlEvents: .TouchUpInside)
+        
+        self.currentUser.checkLover(lover)
         
     }
 
