@@ -24,6 +24,7 @@
 		3221290B1BF881C30048EEB9 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3221290A1BF881C30048EEB9 /* UITableView+Extension.swift */; };
 		3221290D1BF883AF0048EEB9 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3221290C1BF883AF0048EEB9 /* UIView+Extension.swift */; };
 		3221290F1BF8846F0048EEB9 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 3221290E1BF8846F0048EEB9 /* camera.png */; };
+		325991441C29AFFD00AD4D84 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325991431C29AFFD00AD4D84 /* Room.swift */; };
 		3263BBCD1C0B35860035CDCF /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3263BBCC1C0B35860035CDCF /* CurrentUser.swift */; };
 		3266DD641C189059005AEE4D /* EditProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3266DD631C189059005AEE4D /* EditProfileTableViewController.swift */; };
 		3266DD681C1891E1005AEE4D /* EditIconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3266DD661C1891E1005AEE4D /* EditIconCell.swift */; };
@@ -103,6 +104,7 @@
 		3221290A1BF881C30048EEB9 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		3221290C1BF883AF0048EEB9 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		3221290E1BF8846F0048EEB9 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		325991431C29AFFD00AD4D84 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		3263BBCC1C0B35860035CDCF /* CurrentUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
 		3266DD631C189059005AEE4D /* EditProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewController.swift; sourceTree = "<group>"; };
 		3266DD661C1891E1005AEE4D /* EditIconCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditIconCell.swift; sourceTree = "<group>"; };
@@ -280,6 +282,14 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		325991451C29B00200AD4D84 /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				325991431C29AFFD00AD4D84 /* Room.swift */,
+			);
+			name = Room;
+			sourceTree = "<group>";
+		};
 		325F0D5D1C29006E003C35D4 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
@@ -333,6 +343,7 @@
 			children = (
 				3209C80E1C21D840004F2A23 /* User */,
 				325F0D5D1C29006E003C35D4 /* Chat */,
+				325991451C29B00200AD4D84 /* Room */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -685,6 +696,7 @@
 				3221290B1BF881C30048EEB9 /* UITableView+Extension.swift in Sources */,
 				3263BBCD1C0B35860035CDCF /* CurrentUser.swift in Sources */,
 				329DA1B41BFDD0E100D339E1 /* FriendsTableViewController.swift in Sources */,
+				325991441C29AFFD00AD4D84 /* Room.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

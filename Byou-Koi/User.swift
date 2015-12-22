@@ -26,6 +26,7 @@ class User: NSObject {
     var authToken: String?
     var lovers: [User] = []
     var checked: Bool = false
+    var room_token: String?
     
     init(attributes: JSON) {
         self.name = attributes["name"].string

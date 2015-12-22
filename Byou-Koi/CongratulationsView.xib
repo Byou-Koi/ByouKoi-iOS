@@ -11,20 +11,29 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="おめでとうございます" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeN-3m-0ef">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="おめでとうございます" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeN-3m-0ef">
                     <rect key="frame" x="62" y="63" width="251" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="2LY-7f-72l"/>
+                    </constraints>
                     <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="22"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="この方と恋人になりました" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qop-WU-8m9">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="この方と恋人になりました" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qop-WU-8m9">
                     <rect key="frame" x="68" y="91" width="240" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="7Y5-9J-6UM"/>
+                    </constraints>
                     <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="13"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4A-zq-fPL">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4A-zq-fPL">
                     <rect key="frame" x="17" y="434" width="343" height="110"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="110" id="M5A-ie-3B4"/>
+                    </constraints>
                     <string key="text">愛はいつでも贈り物としてあなたのもと
 にやってくる。
 突然、何の前ぶれもなしに。私たちは愛されたいと思って愛するのではない。
@@ -33,25 +42,52 @@
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="honda.png" translatesAutoresizingMaskIntoConstraints="NO" id="k7i-fm-kde">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="honda.png" translatesAutoresizingMaskIntoConstraints="NO" id="k7i-fm-kde">
                     <rect key="frame" x="67" y="130" width="240" height="240"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5o-5Z-Tqj">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5o-5Z-Tqj">
                     <rect key="frame" x="77" y="570" width="220" height="46"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="JAe-jo-Tlq"/>
+                    </constraints>
                     <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="15"/>
                     <state key="normal" title="初めの一歩を踏み出す">
                         <color key="titleColor" red="0.99607843139999996" green="0.37254901959999998" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="本田つばさ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yjy-I1-jT2">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本田つばさ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yjy-I1-jT2">
                     <rect key="frame" x="67" y="396" width="240" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="J2z-cS-neT"/>
+                    </constraints>
                     <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="23"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" red="0.99607843139999996" green="0.37254901959999998" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Yjy-I1-jT2" firstAttribute="leading" secondItem="k7i-fm-kde" secondAttribute="leading" id="0lX-wu-aMz"/>
+                <constraint firstAttribute="bottom" secondItem="K5o-5Z-Tqj" secondAttribute="bottom" constant="51" id="6It-2H-RAq"/>
+                <constraint firstItem="aeN-3m-0ef" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="62" id="As9-F2-hnk"/>
+                <constraint firstItem="a4A-zq-fPL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="17" id="IpL-gJ-dGf"/>
+                <constraint firstItem="Yjy-I1-jT2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="OPI-6f-Q0a"/>
+                <constraint firstItem="aeN-3m-0ef" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="63" id="QRg-7T-KLF"/>
+                <constraint firstItem="Yjy-I1-jT2" firstAttribute="trailing" secondItem="k7i-fm-kde" secondAttribute="trailing" id="T3Z-XP-5iu"/>
+                <constraint firstItem="k7i-fm-kde" firstAttribute="centerX" secondItem="aeN-3m-0ef" secondAttribute="centerX" id="Z7N-G8-sea"/>
+                <constraint firstItem="k7i-fm-kde" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="67" id="ZLa-Op-vdh"/>
+                <constraint firstItem="Yjy-I1-jT2" firstAttribute="top" secondItem="k7i-fm-kde" secondAttribute="bottom" constant="26" id="Zd1-UJ-FGA"/>
+                <constraint firstItem="k7i-fm-kde" firstAttribute="top" secondItem="qop-WU-8m9" secondAttribute="bottom" constant="18" id="cp0-OT-OEb"/>
+                <constraint firstItem="qop-WU-8m9" firstAttribute="centerX" secondItem="aeN-3m-0ef" secondAttribute="centerX" id="eXP-BX-qeg"/>
+                <constraint firstItem="K5o-5Z-Tqj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="77" id="gxD-yY-zrh"/>
+                <constraint firstItem="a4A-zq-fPL" firstAttribute="top" secondItem="Yjy-I1-jT2" secondAttribute="bottom" constant="17" id="mi0-uW-mtv"/>
+                <constraint firstItem="a4A-zq-fPL" firstAttribute="centerX" secondItem="qop-WU-8m9" secondAttribute="centerX" id="qip-em-g4C"/>
+                <constraint firstItem="K5o-5Z-Tqj" firstAttribute="top" secondItem="a4A-zq-fPL" secondAttribute="bottom" constant="26" id="sJ3-dB-B1T"/>
+                <constraint firstItem="qop-WU-8m9" firstAttribute="top" secondItem="aeN-3m-0ef" secondAttribute="bottom" constant="7" id="uh4-wb-0Ca"/>
+                <constraint firstItem="qop-WU-8m9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="68" id="vUx-0Z-4lP"/>
+                <constraint firstItem="K5o-5Z-Tqj" firstAttribute="centerX" secondItem="Yjy-I1-jT2" secondAttribute="centerX" id="wDz-WY-5j4"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <connections>
                 <outlet property="backButton" destination="K5o-5Z-Tqj" id="47h-7M-CLq"/>

@@ -11,8 +11,8 @@ import Foundation
 extension String {
     
     static func getRootApiUrl() -> String {
-        return "http://localhost:3000"
-//        return "http://192.168.100.101:3000"
+//        return "http://localhost:3000"
+        return "http://192.168.100.102:3000"
     }
     
 }

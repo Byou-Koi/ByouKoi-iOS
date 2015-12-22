@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 extension UIColor {
+    
     class func mainTextColor() -> UIColor {
         return UIColor(red: 40/255, green: 44/255, blue: 55/255, alpha: 1.0)
     }

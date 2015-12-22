@@ -29,7 +29,7 @@ class ChatViewController: LGChatController, LGChatControllerDelegate, PTPusherDe
         Chat.fetchMessages(self.currentUser.user!, lover: self.lover) { (chat) in
             self.chats.append(chat)
             let message: LGChatMessage!
-            if self.currentUser.user!.isCurrentUser() {
+            if chat.user.isCurrentUser() {
                 message = LGChatMessage(content: chat.message, sentBy: LGChatMessage.SentBy.User)
             } else {
                 message = LGChatMessage(content: chat.message, sentBy: LGChatMessage.SentBy.Opponent)
@@ -52,7 +52,6 @@ class ChatViewController: LGChatController, LGChatControllerDelegate, PTPusherDe
     
     //メッセージを送信後に呼ばれる
     func chatController(chatController: LGChatController, didAddNewMessage message: LGChatMessage) {
-        print("Did Add Message: \(message.content)")
         let attributes: [String: AnyObject] = [
             "message": message.content,
             "user": self.currentUser.user!
@@ -62,7 +61,7 @@ class ChatViewController: LGChatController, LGChatControllerDelegate, PTPusherDe
     }
     
     func receiveMessage() {
-        let channel = self.client.subscribeToChannelNamed("general")
+        let channel = self.client.subscribeToChannelNamed(self.lover.room_token) //チャンネル名
         channel.bindToEventNamed("chat_event") { (channelEvent) -> Void in
             //pusherから通知がくると呼ばれる
             let json = JSON(channelEvent.data)
