@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gn5-Rq-7z3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gn5-Rq-7z3">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--Profile Table View Controller-->
@@ -154,7 +154,7 @@
                     <navigationItem key="navigationItem" title="恋人" id="TIF-sw-5sW"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <segue destination="L41-dH-Wev" kind="push" identifier="show" id="LeO-fX-KSw"/>
+                        <segue destination="L41-dH-Wev" kind="push" identifier="showChatVC" id="LeO-fX-KSw"/>
                         <segue destination="bAq-Ue-ABc" kind="presentation" identifier="modelCongratulationsVC" modalTransitionStyle="crossDissolve" id="chX-I1-uE4"/>
                     </connections>
                 </tableViewController>
@@ -183,7 +183,7 @@
         <!--hoge-->
         <scene sceneID="pU3-3C-acy">
             <objects>
-                <viewController title="hoge" id="L41-dH-Wev" customClass="SimpleChatViewController" customModule="Byou_Koi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="hoge" id="L41-dH-Wev" customClass="ChatViewController" customModule="Byou_Koi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ijq-IQ-j7g"/>
                         <viewControllerLayoutGuide type="bottom" id="ZLb-HW-sTZ"/>

@@ -10,10 +10,12 @@ import UIKit
 import Pusher
 import SwiftyJSON
 
-class SimpleChatViewController: LGChatController, LGChatControllerDelegate, PTPusherDelegate {
+class ChatViewController: LGChatController, LGChatControllerDelegate, PTPusherDelegate {
 
     var client: PTPusher!
     let currentUser = CurrentUser.sharedInstance
+    var lover: User!
+    var chats: [Chat] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +23,21 @@ class SimpleChatViewController: LGChatController, LGChatControllerDelegate, PTPu
         self.client = PTPusher(key: Secret.pusherAccessKey(), delegate: self, encrypted: true)
         self.client.connect()
         self.delegate = self
-        
+        self.title = self.lover.name
         receiveMessage()
+        
+        Chat.fetchMessages(self.currentUser.user!, lover: self.lover) { (chat) in
+            self.chats.append(chat)
+            let message: LGChatMessage!
+            if self.currentUser.user!.isCurrentUser() {
+                message = LGChatMessage(content: chat.message, sentBy: LGChatMessage.SentBy.User)
+            } else {
+                message = LGChatMessage(content: chat.message, sentBy: LGChatMessage.SentBy.Opponent)
+            }
+            self.messages.append(message)
+            self.tableView.reloadData()
+        }
+        
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -40,10 +55,10 @@ class SimpleChatViewController: LGChatController, LGChatControllerDelegate, PTPu
         print("Did Add Message: \(message.content)")
         let attributes: [String: AnyObject] = [
             "message": message.content,
-            "user": self.currentUser.user
+            "user": self.currentUser.user!
         ]
         let chat = Chat(attributes: attributes)
-        chat.sendMessage()
+        chat.sendMessage(self.lover)
     }
     
     func receiveMessage() {

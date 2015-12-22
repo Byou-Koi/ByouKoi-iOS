@@ -23,6 +23,7 @@ class FriendsTableViewController: UITableViewController, CurrentUserDelegate {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        self.tableView.reloadData()
         self.tabBarController?.tabBar.hidden = false
     }
     
@@ -46,12 +47,18 @@ class FriendsTableViewController: UITableViewController, CurrentUserDelegate {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3
+        if let user = self.currentUser.user {
+            return user.lovers.count
+        } else {
+            return 0
+        }
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("FriendCell", forIndexPath: indexPath) as! FriendCell
-        cell.iconImageView.image = UIImage(named: self.images[indexPath.row])
+        let lover = self.currentUser.user?.lovers[indexPath.row]
+        cell.nameLabel.text = lover?.name
+        cell.iconImageView.asyncLoadImage(lover?.imageURL, placeHolder: "no_image")
         return cell
     }
     
@@ -60,19 +67,24 @@ class FriendsTableViewController: UITableViewController, CurrentUserDelegate {
     }
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        performSegueWithIdentifier("show", sender: nil)
+        self.currentLover = self.currentUser.user?.lovers[indexPath.row]
+        performSegueWithIdentifier("showChatVC", sender: nil)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "modelCongratulationsVC" {
             let congratulationsViewController = segue.destinationViewController as! CongratulationsViewController
             congratulationsViewController.lover = self.currentLover
+        } else if segue.identifier == "showChatVC" {
+            let chatViewController = segue.destinationViewController as! ChatViewController
+            chatViewController.lover = self.currentLover
         }
     }
     
     //delegate
     
     func didFinisedFetchUser(currentUser: CurrentUser) {
+        self.tableView.reloadData()
         if currentUser.isLogin() {
             if let lover = currentUser.findUnCheckedLover() {
                 self.currentLover = lover

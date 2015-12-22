@@ -68,10 +68,11 @@ class User: NSObject {
                 
                 let lover = User(attributes: json["lover"])
                 lover.checked = false
-                currentUser.user.lovers.append(lover)
+                currentUser.user!.lovers.append(lover)
                 callback(message: nil)
         }
     }
+    
     
     func login(callback: (message: String?) -> Void) {
         
@@ -98,13 +99,12 @@ class User: NSObject {
                 currentUser.user = User(attributes: json["user"])
                 currentUser.saveAuthTokenToUserDefaults()
                 callback(message: nil)
-
         }
     }
     
     func isCurrentUser() -> Bool {
         let currentUser = CurrentUser.sharedInstance.user
-        return currentUser.id == self.id
+        return currentUser!.id == self.id
     }
     
 }

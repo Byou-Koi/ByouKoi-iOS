@@ -16,14 +16,16 @@ import SwiftyJSON
 
 class CurrentUser: NSObject {
     static let sharedInstance = CurrentUser()
-    var user: User!
+    var user: User?
     weak var delegate: CurrentUserDelegate?
     
     func saveAuthTokenToUserDefaults() {
-        let defaults = NSUserDefaults.standardUserDefaults()
-        defaults.setObject(self.user.authToken, forKey: "AuthToken")
-        defaults.setObject(self.user.id, forKey: "Id")
-        defaults.synchronize()
+        if let user = self.user {
+            let defaults = NSUserDefaults.standardUserDefaults()
+            defaults.setObject(user.authToken, forKey: "AuthToken")
+            defaults.setObject(user.id, forKey: "Id")
+            defaults.synchronize()
+        }
     }
     
     func fetchCurrentUser() {
@@ -31,15 +33,15 @@ class CurrentUser: NSObject {
         let currentUserId = dafaults.objectForKey("Id") as! Int
         Alamofire.request(.GET, String.getRootApiUrl() + "/api/users/\(currentUserId)", parameters: nil)
             .responseJSON { response in
+                
                 let json = JSON(response.result.value!)
                 self.user = User(attributes: json["user"])
                 
                 for lover in json["lovers"].array! {
                     let loverUser = User(attributes: lover["lover"])
                     loverUser.checked = lover["checked"].bool!
-                     self.user.lovers.append(loverUser)
+                     self.user!.lovers.append(loverUser)
                 }
-                
                 self.delegate?.didFinisedFetchUser(self)
         }
     }
@@ -61,10 +63,10 @@ class CurrentUser: NSObject {
     func uploadProfileImage(image: UIImage, callback: () -> Void) {
         
         let params: [String: AnyObject] = [
-            "name": user.name!,
-            "auth_token": user.authToken!
+            "name": self.user!.name!,
+            "auth_token": self.user!.authToken!
         ]
-        let pass = String.getRootApiUrl() +  "/api/users/\(self.user.id!)"
+        let pass = String.getRootApiUrl() +  "/api/users/\(self.user!.id!)"
         let httpMethod = Alamofire.Method.PUT.rawValue
         
         let urlRequest = NSData.urlRequestWithComponents(httpMethod, urlString: pass, parameters: params, image: image)
@@ -80,22 +82,20 @@ class CurrentUser: NSObject {
                 self.user = User(attributes: json["user"])
                 callback()
         }
-        
     }
     
     func checkLover(lover: User) {
         let params: [String: AnyObject] = [
             "lover_id": lover.id!
         ]
-        let pass = String.getRootApiUrl() +  "/api/users/\(self.user.id!)/check_lover"
+        let pass = String.getRootApiUrl() +  "/api/users/\(self.user!.id!)/check_lover"
         Alamofire.request(.POST, pass, parameters: params)
             .responseJSON { response in
-                
         }
     }
     
     func findUnCheckedLover() -> User? {
-        for lover in self.user.lovers {
+        for lover in self.user!.lovers {
             if lover.checked == false {
                 lover.checked = true
                 return lover
@@ -103,8 +103,5 @@ class CurrentUser: NSObject {
         }
         return nil
     }
-    
-    
-    
     
 }

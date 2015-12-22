@@ -34,7 +34,7 @@
 		329DA1B41BFDD0E100D339E1 /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DA1B31BFDD0E100D339E1 /* FriendsTableViewController.swift */; };
 		329DA2111C05791800D339E1 /* LGSimpleChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DA20F1C05791800D339E1 /* LGSimpleChat.swift */; };
 		329DA2121C05791800D339E1 /* License in Resources */ = {isa = PBXBuildFile; fileRef = 329DA2101C05791800D339E1 /* License */; };
-		329DA2151C057A8A00D339E1 /* SimpleChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DA2141C057A8A00D339E1 /* SimpleChatViewController.swift */; };
+		329DA2151C057A8A00D339E1 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DA2141C057A8A00D339E1 /* ChatViewController.swift */; };
 		329DA2181C0613CA00D339E1 /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329DA2161C0613CA00D339E1 /* FriendCell.swift */; };
 		329DA2191C0613CA00D339E1 /* FriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 329DA2171C0613CA00D339E1 /* FriendCell.xib */; };
 		329DA21D1C0619EA00D339E1 /* horikita.png in Resources */ = {isa = PBXBuildFile; fileRef = 329DA21B1C0619EA00D339E1 /* horikita.png */; };
@@ -113,7 +113,7 @@
 		329DA1B31BFDD0E100D339E1 /* FriendsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
 		329DA20F1C05791800D339E1 /* LGSimpleChat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LGSimpleChat.swift; sourceTree = "<group>"; };
 		329DA2101C05791800D339E1 /* License */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License; sourceTree = "<group>"; };
-		329DA2141C057A8A00D339E1 /* SimpleChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleChatViewController.swift; sourceTree = "<group>"; };
+		329DA2141C057A8A00D339E1 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		329DA2161C0613CA00D339E1 /* FriendCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
 		329DA2171C0613CA00D339E1 /* FriendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendCell.xib; sourceTree = "<group>"; };
 		329DA21B1C0619EA00D339E1 /* horikita.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horikita.png; sourceTree = "<group>"; };
@@ -212,10 +212,9 @@
 		322128F51BF8772A0048EEB9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				322129021BF87CE90048EEB9 /* Views */,
 				329DA25F1C0995DB00D339E1 /* MainTabBarController.swift */,
 				322128F61BF877E20048EEB9 /* ProfileTableViewController.swift */,
-				329DA2141C057A8A00D339E1 /* SimpleChatViewController.swift */,
+				329DA2141C057A8A00D339E1 /* ChatViewController.swift */,
 				329DA1B31BFDD0E100D339E1 /* FriendsTableViewController.swift */,
 				329DA2591C09939500D339E1 /* LoginViewController.swift */,
 				3266DD631C189059005AEE4D /* EditProfileTableViewController.swift */,
@@ -249,6 +248,7 @@
 		322129021BF87CE90048EEB9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				322128FA1BF878830048EEB9 /* NavigationBars */,
 				3266DD651C1891A4005AEE4D /* Edit Profile Form Cell */,
 				32B39FAF1BFA35BD00CFAE89 /* Edit Label Cell */,
 				32B39FAA1BFA358E00CFAE89 /* Profile Cell */,
@@ -278,6 +278,14 @@
 				329DA21C1C0619EA00D339E1 /* honda.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		325F0D5D1C29006E003C35D4 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				3209C80F1C21D853004F2A23 /* Chat.swift */,
+			);
+			name = Chat;
 			sourceTree = "<group>";
 		};
 		3266DD651C1891A4005AEE4D /* Edit Profile Form Cell */ = {
@@ -324,7 +332,7 @@
 			isa = PBXGroup;
 			children = (
 				3209C80E1C21D840004F2A23 /* User */,
-				3209C80F1C21D853004F2A23 /* Chat.swift */,
+				325F0D5D1C29006E003C35D4 /* Chat */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -393,8 +401,8 @@
 				32ECD3BA1BF860CF00BB25BA /* AppDelegate.swift */,
 				32ECD3BE1BF860CF00BB25BA /* Main.storyboard */,
 				329DA2761C0B200500D339E1 /* Models */,
+				322129021BF87CE90048EEB9 /* Views */,
 				322128F51BF8772A0048EEB9 /* Controllers */,
-				322128FA1BF878830048EEB9 /* NavigationBars */,
 				329DA2131C05792500D339E1 /* SimpleChat */,
 				322128FD1BF8796B0048EEB9 /* Extensions */,
 				322129091BF880CF0048EEB9 /* Images */,
@@ -653,7 +661,7 @@
 				322128F91BF8787E0048EEB9 /* CustomNavigationBar.swift in Sources */,
 				32B39FA81BFA2EF000CFAE89 /* ProfileLabel.swift in Sources */,
 				327E6AAB1C1DD7F100852E84 /* NSData+Extension.swift in Sources */,
-				329DA2151C057A8A00D339E1 /* SimpleChatViewController.swift in Sources */,
+				329DA2151C057A8A00D339E1 /* ChatViewController.swift in Sources */,
 				329DA2181C0613CA00D339E1 /* FriendCell.swift in Sources */,
 				3266DD641C189059005AEE4D /* EditProfileTableViewController.swift in Sources */,
 				3221290D1BF883AF0048EEB9 /* UIView+Extension.swift in Sources */,

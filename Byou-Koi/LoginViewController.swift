@@ -14,6 +14,7 @@ class LoginViewController: UIViewController {
     var loginView: LoginView!
     var loginFormView: LoginFormView!
     var signUpFormView: SignUpFormView!
+    let currentUser = CurrentUser.sharedInstance
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,7 +58,9 @@ class LoginViewController: UIViewController {
                 self.showAlert(msg)
                 return
             } else {
+                self.currentUser.fetchCurrentUser()
                 self.dismissViewControllerAnimated(true, completion: nil)
+                
             }
         }
     }
@@ -77,6 +80,7 @@ class LoginViewController: UIViewController {
                 self.showAlert(msg)
                 return
             } else {
+                self.currentUser.fetchCurrentUser()
                 self.dismissViewControllerAnimated(true, completion: nil)
             }
         }

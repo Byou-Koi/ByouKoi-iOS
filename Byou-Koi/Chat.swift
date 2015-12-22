@@ -20,15 +20,36 @@ class Chat: NSObject {
         self.user = attributes["user"] as! User
     }
     
-    func sendMessage() {
+    func sendMessage(lover: User) {
         let params: [String: AnyObject] = [
             "message": self.message,
-            "user_id": self.user.id!
+            "user_id": self.user.id!,
+            "target_user_id": lover.id!
         ]
         Alamofire.request(.POST, String.getRootApiUrl() + "/api/chats", parameters: params)
-            .responseString { response in
+            .responseJSON { response in
                 print("Success: \(response.result.isSuccess)")
                 print("Response String: \(response.result.error)")
+        }
+    }
+    
+    class func fetchMessages(user: User, lover: User, callback: (chat: Chat) -> Void) {
+        let params: [String: AnyObject] = [
+            "user_id": user.id!,
+            "target_user_id": lover.id!
+        ]
+        
+        Alamofire.request(.GET, String.getRootApiUrl() + "/api/chats", parameters: params)
+            .responseJSON { response in
+                if let _ = response.result.error {
+                    return
+                }
+                let json = JSON(response.result.value!)
+                for chat in json["chats"].array! {
+                    let user = User(attributes: chat["user"])
+                    let chat = Chat(attributes: ["message": chat["message"].string!, "user": user])
+                    callback(chat: chat)
+                }
         }
     }
 }
