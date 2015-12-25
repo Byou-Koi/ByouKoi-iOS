@@ -19,8 +19,8 @@ class CongratulationsViewController: UIViewController {
         let congratulationsView = CongratulationsView.instance()
         congratulationsView.frame = self.view.frame
         self.view.addSubview(congratulationsView)
-        
         congratulationsView.nameLabel.text = lover.name
+        congratulationsView.iconImageView.asyncLoadImage(lover.imageURL, placeHolder: "no_image")
         congratulationsView.backButton.addTarget(self, action: "back", forControlEvents: .TouchUpInside)
         
         self.currentUser.checkLover(lover)
