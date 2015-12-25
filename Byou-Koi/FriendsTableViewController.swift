@@ -58,6 +58,8 @@ class FriendsTableViewController: UITableViewController, CurrentUserDelegate {
         let cell = tableView.dequeueReusableCellWithIdentifier("FriendCell", forIndexPath: indexPath) as! FriendCell
         let lover = self.currentUser.user?.lovers[indexPath.row]
         cell.nameLabel.text = lover?.name
+        cell.messageLabel.text = lover?.last_message
+        cell.timeLabel.text = NSDate.convertToNSDate(lover!.last_message_time!).timeAgoInWords()
         cell.iconImageView.asyncLoadImage(lover?.imageURL, placeHolder: "no_image")
         return cell
     }

@@ -128,6 +128,8 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="iconImageView" destination="7gh-IV-wxL" id="8Sz-4Z-czf"/>
+                <outlet property="longestPeriodLabel" destination="zUO-Ny-IaK" id="yeS-1l-q7L"/>
+                <outlet property="loverCountLabel" destination="kiK-Do-22B" id="blW-VZ-JAe"/>
                 <outlet property="mailLabel" destination="ejL-0g-nEh" id="IDb-vw-VuF"/>
                 <outlet property="nameLabel" destination="k9p-xf-VP3" id="zed-9g-lAd"/>
             </connections>

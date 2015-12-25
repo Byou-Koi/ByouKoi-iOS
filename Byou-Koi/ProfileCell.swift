@@ -9,6 +9,8 @@
 import UIKit
 
 class ProfileCell: UITableViewCell {
+    @IBOutlet weak var longestPeriodLabel: UILabel!
+    @IBOutlet weak var loverCountLabel: UILabel!
     @IBOutlet weak var mailLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var iconImageView: UIImageView!

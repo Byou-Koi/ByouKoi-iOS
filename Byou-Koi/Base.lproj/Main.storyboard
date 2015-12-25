@@ -48,11 +48,11 @@
             </objects>
             <point key="canvasLocation" x="3031.5" y="-342.5"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="JQh-sZ-aBT">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dgt-tx-KZZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="16x-vq-kdA"/>
+                    <tabBarItem key="tabBarItem" title="" id="16x-vq-kdA"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="4Xm-j9-ydh" customClass="CustomNavigationBar" customModule="Byou_Koi" customModuleProvider="target">
@@ -107,11 +107,11 @@
             </objects>
             <point key="canvasLocation" x="1101.5" y="827.5"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="jto-xf-3Qm">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Pd-WT-5EB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="nep-uA-akl"/>
+                    <tabBarItem key="tabBarItem" title="" id="nep-uA-akl"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="7uS-NE-uMP" customClass="CustomNavigationBar" customModule="Byou_Koi" customModuleProvider="target">

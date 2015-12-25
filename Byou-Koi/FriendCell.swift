@@ -9,6 +9,7 @@
 import UIKit
 
 class FriendCell: UITableViewCell {
+    @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var timLabel: UILabel!
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!

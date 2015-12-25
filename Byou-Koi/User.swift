@@ -27,6 +27,9 @@ class User: NSObject {
     var lovers: [User] = []
     var checked: Bool = false
     var room_token: String?
+    var longest_period: Int?
+    var last_message: String?
+    var last_message_time: String?
     
     init(attributes: JSON) {
         self.name = attributes["name"].string

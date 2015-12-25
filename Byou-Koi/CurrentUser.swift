@@ -36,13 +36,17 @@ class CurrentUser: NSObject {
                 
                 let json = JSON(response.result.value!)
                 self.user = User(attributes: json["user"])
+                self.user?.longest_period = json["longest_period"].int
                 print("================")
                 print(json)
                 print("================")
+                
                 for lover in json["lovers"].array! {
                     let loverUser = User(attributes: lover["lover"])
                     loverUser.checked = lover["checked"].bool!
                     loverUser.room_token = lover["room_token"].string
+                    loverUser.last_message = lover["last_message"]["message"].string
+                    loverUser.last_message_time = lover["last_message"]["created_at"].string
                      self.user!.lovers.append(loverUser)
                 }
                 self.delegate?.didFinisedFetchUser(self)

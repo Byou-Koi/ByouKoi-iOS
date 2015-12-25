@@ -24,7 +24,15 @@
 		3221290B1BF881C30048EEB9 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3221290A1BF881C30048EEB9 /* UITableView+Extension.swift */; };
 		3221290D1BF883AF0048EEB9 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3221290C1BF883AF0048EEB9 /* UIView+Extension.swift */; };
 		3221290F1BF8846F0048EEB9 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 3221290E1BF8846F0048EEB9 /* camera.png */; };
+		322F1F691C2D2DCB00279449 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322F1F681C2D2DCB00279449 /* NSDate+Extension.swift */; };
+		322F1F6B1C2D368B00279449 /* males4.png in Resources */ = {isa = PBXBuildFile; fileRef = 322F1F6A1C2D368B00279449 /* males4.png */; };
+		322F1F6D1C2D372500279449 /* couple5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 322F1F6C1C2D372500279449 /* couple5@2x.png */; };
+		322F1F701C2D37D100279449 /* man117_hi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 322F1F6E1C2D37D100279449 /* man117_hi@2x.png */; };
+		322F1F711C2D37D100279449 /* man117@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 322F1F6F1C2D37D100279449 /* man117@2x.png */; };
+		322F1F731C2D37D800279449 /* couple5_hi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 322F1F721C2D37D800279449 /* couple5_hi@2x.png */; };
 		325991441C29AFFD00AD4D84 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325991431C29AFFD00AD4D84 /* Room.swift */; };
+		325991491C2AF42D00AD4D84 /* SentimentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 325991481C2AF42D00AD4D84 /* SentimentView.xib */; };
+		3259914B1C2AF44000AD4D84 /* SentimentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3259914A1C2AF44000AD4D84 /* SentimentView.swift */; };
 		3263BBCD1C0B35860035CDCF /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3263BBCC1C0B35860035CDCF /* CurrentUser.swift */; };
 		3266DD641C189059005AEE4D /* EditProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3266DD631C189059005AEE4D /* EditProfileTableViewController.swift */; };
 		3266DD681C1891E1005AEE4D /* EditIconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3266DD661C1891E1005AEE4D /* EditIconCell.swift */; };
@@ -104,7 +112,15 @@
 		3221290A1BF881C30048EEB9 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		3221290C1BF883AF0048EEB9 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		3221290E1BF8846F0048EEB9 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		322F1F681C2D2DCB00279449 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
+		322F1F6A1C2D368B00279449 /* males4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = males4.png; sourceTree = "<group>"; };
+		322F1F6C1C2D372500279449 /* couple5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "couple5@2x.png"; sourceTree = "<group>"; };
+		322F1F6E1C2D37D100279449 /* man117_hi@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man117_hi@2x.png"; sourceTree = "<group>"; };
+		322F1F6F1C2D37D100279449 /* man117@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "man117@2x.png"; sourceTree = "<group>"; };
+		322F1F721C2D37D800279449 /* couple5_hi@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "couple5_hi@2x.png"; sourceTree = "<group>"; };
 		325991431C29AFFD00AD4D84 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		325991481C2AF42D00AD4D84 /* SentimentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SentimentView.xib; sourceTree = "<group>"; };
+		3259914A1C2AF44000AD4D84 /* SentimentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentimentView.swift; sourceTree = "<group>"; };
 		3263BBCC1C0B35860035CDCF /* CurrentUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
 		3266DD631C189059005AEE4D /* EditProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewController.swift; sourceTree = "<group>"; };
 		3266DD661C1891E1005AEE4D /* EditIconCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditIconCell.swift; sourceTree = "<group>"; };
@@ -243,6 +259,7 @@
 				329DA2771C0B224900D339E1 /* String+Extension.swift */,
 				327E6AAA1C1DD7F100852E84 /* NSData+Extension.swift */,
 				327E6AAC1C21CB3900852E84 /* UIImageView+Extension.swift */,
+				322F1F681C2D2DCB00279449 /* NSDate+Extension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -259,6 +276,7 @@
 				329DA21A1C0613CF00D339E1 /* Friend Cell */,
 				329DA2631C0AC77D00D339E1 /* Login View */,
 				3209C86E1C2578A1004F2A23 /* Congratulations */,
+				3259914C1C2AF46D00AD4D84 /* Sentiment View */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -267,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				3221290E1BF8846F0048EEB9 /* camera.png */,
+				322F1F6A1C2D368B00279449 /* males4.png */,
 				3209C86F1C258589004F2A23 /* sakura.png */,
 				327E6AAE1C21CE6100852E84 /* no_image.png */,
 				32A9CA211C147D450063F333 /* menu@2x.png */,
@@ -275,7 +294,11 @@
 				329DA2681C0AD13300D339E1 /* byousoku.png */,
 				329DA26A1C0AF4D700D339E1 /* backback.png */,
 				329DA2611C099DBC00D339E1 /* love.png */,
+				322F1F721C2D37D800279449 /* couple5_hi@2x.png */,
+				322F1F6C1C2D372500279449 /* couple5@2x.png */,
 				322129071BF880CC0048EEB9 /* paruru.png */,
+				322F1F6E1C2D37D100279449 /* man117_hi@2x.png */,
+				322F1F6F1C2D37D100279449 /* man117@2x.png */,
 				329DA21B1C0619EA00D339E1 /* horikita.png */,
 				329DA21C1C0619EA00D339E1 /* honda.png */,
 			);
@@ -288,6 +311,15 @@
 				325991431C29AFFD00AD4D84 /* Room.swift */,
 			);
 			name = Room;
+			sourceTree = "<group>";
+		};
+		3259914C1C2AF46D00AD4D84 /* Sentiment View */ = {
+			isa = PBXGroup;
+			children = (
+				325991481C2AF42D00AD4D84 /* SentimentView.xib */,
+				3259914A1C2AF44000AD4D84 /* SentimentView.swift */,
+			);
+			name = "Sentiment View";
 			sourceTree = "<group>";
 		};
 		325F0D5D1C29006E003C35D4 /* Chat */ = {
@@ -567,11 +599,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				322F1F731C2D37D800279449 /* couple5_hi@2x.png in Resources */,
 				327E6AAF1C21CE6100852E84 /* no_image.png in Resources */,
 				329DA2711C0B076400D339E1 /* SignUpFormView.xib in Resources */,
 				32A9CA221C147D450063F333 /* menu@2x.png in Resources */,
+				322F1F6B1C2D368B00279449 /* males4.png in Resources */,
 				329DA2691C0AD13300D339E1 /* byousoku.png in Resources */,
 				3209C8701C258589004F2A23 /* sakura.png in Resources */,
+				322F1F711C2D37D100279449 /* man117@2x.png in Resources */,
 				322129081BF880CC0048EEB9 /* paruru.png in Resources */,
 				32B39FAE1BFA35B700CFAE89 /* ProfileLabelCell.xib in Resources */,
 				329DA26B1C0AF4D700D339E1 /* backback.png in Resources */,
@@ -581,10 +616,13 @@
 				329DA25E1C0993D700D339E1 /* LoginView.xib in Resources */,
 				322129011BF87CE40048EEB9 /* ProfileCell.xib in Resources */,
 				329DA2621C099DBC00D339E1 /* love.png in Resources */,
+				322F1F6D1C2D372500279449 /* couple5@2x.png in Resources */,
 				329DA2671C0AC7AC00D339E1 /* LoginFormView.xib in Resources */,
 				329DA2121C05791800D339E1 /* License in Resources */,
 				32B39FB41BFA3B1400CFAE89 /* EditMenuCell.xib in Resources */,
+				322F1F701C2D37D100279449 /* man117_hi@2x.png in Resources */,
 				3209C86D1C2577C7004F2A23 /* CongratulationsView.xib in Resources */,
+				325991491C2AF42D00AD4D84 /* SentimentView.xib in Resources */,
 				329DA26F1C0AF72300D339E1 /* ffff.png in Resources */,
 				32ECD3C21BF860CF00BB25BA /* Assets.xcassets in Resources */,
 				3221290F1BF8846F0048EEB9 /* camera.png in Resources */,
@@ -678,6 +716,7 @@
 				3221290D1BF883AF0048EEB9 /* UIView+Extension.swift in Sources */,
 				3209C86B1C2577B9004F2A23 /* CongratulationsView.swift in Sources */,
 				3266DD681C1891E1005AEE4D /* EditIconCell.swift in Sources */,
+				3259914B1C2AF44000AD4D84 /* SentimentView.swift in Sources */,
 				32B39FB31BFA3B1400CFAE89 /* EditMenuCell.swift in Sources */,
 				329DA2751C0B1FFF00D339E1 /* User.swift in Sources */,
 				3209C8101C21D853004F2A23 /* Chat.swift in Sources */,
@@ -697,6 +736,7 @@
 				3263BBCD1C0B35860035CDCF /* CurrentUser.swift in Sources */,
 				329DA1B41BFDD0E100D339E1 /* FriendsTableViewController.swift in Sources */,
 				325991441C29AFFD00AD4D84 /* Room.swift in Sources */,
+				322F1F691C2D2DCB00279449 /* NSDate+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -29,6 +29,7 @@ class ChatViewController: LGChatController, LGChatControllerDelegate, PTPusherDe
         Chat.fetchMessages(self.currentUser.user!, lover: self.lover) { (chat) in
             self.chats.append(chat)
             let message: LGChatMessage!
+            
             if chat.user.isCurrentUser() {
                 message = LGChatMessage(content: chat.message, sentBy: LGChatMessage.SentBy.User)
             } else {
@@ -43,6 +44,7 @@ class ChatViewController: LGChatController, LGChatControllerDelegate, PTPusherDe
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         self.tabBarController?.tabBar.hidden = true
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu.png"), style: .Plain, target: self, action: "showMenu")
     }
     
     override func didReceiveMemoryWarning() {
@@ -77,5 +79,11 @@ class ChatViewController: LGChatController, LGChatControllerDelegate, PTPusherDe
         }
     }
 
+    func showMenu() {
+        let sentimentView = SentimentView.instance()
+        sentimentView.frame = self.view.frame
+        sentimentView.frame.origin = CGPointZero
+        self.view.addSubview(sentimentView)
+    }
 
 }

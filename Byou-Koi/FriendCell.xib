@@ -24,19 +24,10 @@
                                     <constraint firstAttribute="width" constant="68" id="kur-wh-oLi"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="島崎 ぱるる" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYS-M5-Znj">
-                                <rect key="frame" x="89" y="8" width="222" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="8qk-O3-2BZ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="昨日" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMj-y2-Zln">
-                                <rect key="frame" x="326" y="8" width="40" height="21"/>
+                                <rect key="frame" x="306" y="8" width="60" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="hlB-Xu-OkY"/>
+                                    <constraint firstAttribute="width" constant="60" id="hlB-Xu-OkY"/>
                                     <constraint firstAttribute="height" constant="21" id="uRs-f7-jXg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
@@ -52,6 +43,15 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="島崎 ぱるる" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYS-M5-Znj">
+                                <rect key="frame" x="89" y="8" width="157" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="8qk-O3-2BZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -62,7 +62,7 @@
                             <constraint firstItem="fTH-fy-2px" firstAttribute="leading" secondItem="vAm-tb-nOr" secondAttribute="trailing" constant="13" id="OtG-Ch-OjV"/>
                             <constraint firstItem="gYS-M5-Znj" firstAttribute="leading" secondItem="vAm-tb-nOr" secondAttribute="trailing" constant="13" id="TH2-Ja-Q4K"/>
                             <constraint firstItem="XMj-y2-Zln" firstAttribute="top" secondItem="SIW-Pn-6Ie" secondAttribute="top" constant="8" id="TYb-w3-5x4"/>
-                            <constraint firstItem="XMj-y2-Zln" firstAttribute="leading" secondItem="gYS-M5-Znj" secondAttribute="trailing" constant="15" id="d8K-r9-A7W"/>
+                            <constraint firstItem="XMj-y2-Zln" firstAttribute="leading" secondItem="gYS-M5-Znj" secondAttribute="trailing" constant="60" id="d8K-r9-A7W"/>
                             <constraint firstItem="fTH-fy-2px" firstAttribute="top" secondItem="XMj-y2-Zln" secondAttribute="bottom" constant="5" id="h0O-Cg-S0O"/>
                             <constraint firstItem="vAm-tb-nOr" firstAttribute="leading" secondItem="SIW-Pn-6Ie" secondAttribute="leading" constant="8" id="q0n-hR-3lT"/>
                         </constraints>
@@ -81,6 +81,7 @@
                 <outlet property="messageLabel" destination="fTH-fy-2px" id="DEL-ZT-0pS"/>
                 <outlet property="nameLabel" destination="gYS-M5-Znj" id="nxJ-gV-pce"/>
                 <outlet property="timLabel" destination="XMj-y2-Zln" id="ttE-TU-l7l"/>
+                <outlet property="timeLabel" destination="XMj-y2-Zln" id="hHm-Vv-fCf"/>
             </connections>
             <point key="canvasLocation" x="516" y="216.5"/>
         </tableViewCell>
